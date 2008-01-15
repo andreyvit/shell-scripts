@@ -44,29 +44,39 @@ cmd_set () {
 }
 
 cmd_export () {
+	all=false
+	case "$1" in
+		-a) all=true; shift;;
+		*)  shift;
+	esac
+
 	get_workdir
 	
-	cvshead=$(git rev-parse --verify $ref_cvshead 2>/dev/null) ||
-		die "Don't know what is in CVS head. Run '$0 set' to initialize."
+	while true; do
+		cvshead=$(git rev-parse --verify $ref_cvshead 2>/dev/null) ||
+			die "Don't know what is in CVS head. Run '$0 set' to initialize."
 	
-	newrev=$(git-cherry $cvshead HEAD | head -1 | sed 's/^+ //') ||
-		die "Cannot determine the next revision to commit."
+		newrev=$(git-cherry $cvshead HEAD | head -1 | sed 's/^+ //') ||
+			die "Cannot determine the next revision to commit."
 	
-	if test -z "$newrev"; then
-		echo "CVS is already up-to-date with HEAD."
-		exit
-	fi
+		if test -z "$newrev"; then
+			echo "CVS is already up-to-date with HEAD."
+			exit
+		fi
 	
-	git rev-parse --verify $newrev >/dev/null ||
-		die "Internal error - invalid revision to commit: $rev"
+		git rev-parse --verify $newrev >/dev/null ||
+			die "Internal error - invalid revision to commit: $rev"
 	
-	export GIT_DIR
-	(cd $workdir; git-cvsexportcommit -c -v $newrev) ||
-		die "Exporting failed."
+		export GIT_DIR
+		(cd $workdir; git-cvsexportcommit -c -v $newrev) ||
+			die "Exporting failed."
 	
-	echo "cvshead: $cvshead => $newrev"
-	git update-ref -m "Committed $newrev on $(date)" $ref_cvshead $newrev ||
-		die "Cannot update ref."
+		echo "cvshead: $cvshead => $newrev"
+		git update-ref -m "Committed $newrev on $(date)" $ref_cvshead $newrev ||
+			die "Cannot update ref."
+			
+		$all || exit
+	done
 }
 
 have_cvshead () {
