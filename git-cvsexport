@@ -1,5 +1,17 @@
 #! /bin/sh
 
+# Exports commits into a CVS repository using git-cvsexportcommit.
+# Tracks CVS HEAD with refs/cvshead, which is updated on every commit.
+#
+# Getting started:
+# 1. Check out the CVS module you want to get a working dir.
+# 2. git-cvsexport init <path-to-CVS-working-dir>
+# 3. git-cvsexport set <revision-that-corresponds-to-CVS-HEAD>
+#
+# Now you can run 'git-cvsexport -1' to export one more commit to CVS,
+# or 'git-cvsexport' to export all remaining commits to CVS.
+
+
 USAGE='[ | set | export | history]'
 
 SUBDIRECTORY_OK=Yes
@@ -44,9 +56,9 @@ cmd_set () {
 }
 
 cmd_export () {
-	all=false
+	single=false
 	case "$1" in
-		-a) all=true; shift;;
+		-1) single=true; shift;;
 		*)  shift;
 	esac
 
@@ -75,7 +87,7 @@ cmd_export () {
 		git update-ref -m "Committed $newrev on $(date)" $ref_cvshead $newrev ||
 			die "Cannot update ref."
 			
-		$all || exit
+		$single && exit
 	done
 }
 
