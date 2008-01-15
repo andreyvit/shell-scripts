@@ -1,0 +1,8 @@
+#! /bin/bash
+BASE="$(basename $1)"
+#scp -P2222 $1 andreyvit@193.124.208.93:/home/andreyvit/public_html/$BASE
+scp $1 andreyvit@tarantsov.com:/sites/files.tarantsov.com/www/$BASE
+url=http://files.tarantsov.com/$BASE
+echo -n $url | pbcopy
+echo "Published file $1 as $url."
+echo "URL is copied to clipboard."

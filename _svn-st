@@ -1,0 +1,10 @@
+{
+	counter=0
+	declare -i index
+	while read line; do
+		fname="$(echo "$line" | cut -c 8-)"
+		index=++counter
+		echo "$(printf %3d $index) $line"
+		declare f$index="$fname"
+	done
+} < <(svn st "$@")

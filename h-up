@@ -1,0 +1,2 @@
+#! /bin/bash
+monitor -s -o open -h 10.168.48.1 -u tarantsov -p Supreme29court

@@ -1,0 +1,96 @@
+#! /bin/sh
+
+USAGE='[ | set | export | history]'
+
+SUBDIRECTORY_OK=Yes
+. git-sh-setup
+cd_to_toplevel
+
+ref_cvshead=refs/cvshead
+
+get_workdir () {
+	blame="Run '$0 init <path-to-CVS-working-dir>'."
+	workdir=$(git config cvsexport.workdir) ||
+		die "CVS working directory not set. $blame"
+	test -d "$workdir" ||
+		die "Working directory does not exist: $workdir. $blame"
+	test -d "$workdir/CVS" ||
+		die "Not a CVS working directory: $workdir. $blame"
+}
+
+cmd_init () {
+	workdir="$1"; shift
+	test -d "$workdir" ||
+		die "Working directory does not exist: $workdir"
+	test -d "$workdir/CVS" ||
+		die "Not a CVS working directory: $workdir"
+	git config cvsexport.workdir "$workdir"
+	echo "Working directory set to $workdir."
+	echo "Now run '$0 set <revision>' to specify the revision which corresponds to"
+	echo "the current CVS HEAD."
+}
+
+cmd_set () {
+	touch "$GIT_DIR/logs/$ref_cvshead"
+	s=$(git rev-parse --revs-only --no-flags --default HEAD "$@")
+	rev=$(git rev-parse --verify "$s")
+	if old=$(git rev-parse $ref_cvshead 2>&1 ); then
+		echo "cvshead: $old => $rev"
+	else
+		echo "cvshead: initializing to $rev"
+	fi
+	git update-ref -m "Manually set on $(date)" $ref_cvshead $rev ||
+		die "Cannot update ref."
+}
+
+cmd_export () {
+	get_workdir
+	
+	cvshead=$(git rev-parse --verify $ref_cvshead 2>/dev/null) ||
+		die "Don't know what is in CVS head. Run '$0 set' to initialize."
+	
+	newrev=$(git-cherry $cvshead HEAD | head -1 | sed 's/^+ //') ||
+		die "Cannot determine the next revision to commit."
+	
+	if test -z "$newrev"; then
+		echo "CVS is already up-to-date with HEAD."
+		exit
+	fi
+	
+	git rev-parse --verify $newrev >/dev/null ||
+		die "Internal error - invalid revision to commit: $rev"
+	
+	export GIT_DIR
+	(cd $workdir; git-cvsexportcommit -c -v $newrev) ||
+		die "Exporting failed."
+	
+	echo "cvshead: $cvshead => $newrev"
+	git update-ref -m "Committed $newrev on $(date)" $ref_cvshead $newrev ||
+		die "Cannot update ref."
+}
+
+have_cvshead () {
+	git rev-parse --verify $ref_cvshead >/dev/null 2>&1
+}
+
+cmd_history () {
+	have_cvshead || return 0
+	git log --pretty=oneline -g "$@" $ref_cvshead
+}
+
+case "$1" in
+init)
+	shift
+	cmd_init "$@";;
+set)
+	shift
+	cmd_set "$@";;
+history)
+	shift
+	cmd_history "$@";;
+help | usage)
+	usage;;
+*)
+	test $# -gt 0 && test "$1" = export && shift
+	cmd_export "$@";;
+esac

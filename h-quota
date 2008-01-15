@@ -1,0 +1,2 @@
+#! /bin/bash
+monitor -s -o guqa -h 10.168.48.1

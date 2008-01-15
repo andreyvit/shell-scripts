@@ -1,0 +1,3 @@
+#! /bin/bash
+sjury
+sshfs -p 2233 andreyvit@localhost:/home/ftp /YSFS -orw -oreconnect -oumask=000 "-ovolname=YourSway FS"

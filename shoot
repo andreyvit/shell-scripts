@@ -1,0 +1,28 @@
+#! /bin/bash
+CDLG=/Applications/CocoaDialog.app/Contents/MacOS/CocoaDialog
+DESTDIR=~/Desktop/Screenshots
+
+while true; do
+  TEMPFILE=$(mktemp -t shot)
+  screencapture -i $TEMPFILE
+  echo "Temporarily saved in $TEMPFILE."
+  reply="$($CDLG inputbox --title "Screenshot" --informative-text "Enter the base file name for your screenshot:" --button1 "Save & upload" --button2 "Retry" --button3 "Give Up")"
+  CHOICE="$(echo "$reply" | (read; echo $REPLY))"
+  NAME="$(echo "$reply" | (read; read; echo $REPLY))"
+  case $CHOICE in
+    3)
+      rm $TEMPFILE
+      exit;;
+    1)
+      test -d $DESTDIR || mkdir -p $DESTDIR
+      DEST=$DESTDIR/$NAME.png
+      mv $TEMPFILE $DEST
+      echo "Saved screenshot in $DEST."
+      # put file path into clipboard, to make retrying the upload easier
+      echo -n "$DEST" | pbcopy
+      publish-file $DEST
+      exit;;
+    *)
+      rm $TEMPFILE;;
+  esac  
+done

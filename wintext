@@ -1,0 +1,6 @@
+#! /bin/bash
+cp "$1" "$1.tmp"
+(echo -en '\376\377'; iconv -t ucs-2 -f cp1251 "$1.tmp") >"$1"
+rm "$1.tmp"
+open "$1"
+
