@@ -19,7 +19,7 @@ while $cont && test -n "$1"; do
       echo "  $(basename "$0") $options host.com:~user/path/to/repos.git"
       echo ""
       echo "By default the repositories ending with \".git\" are bare, and all others are not."
-      echo "To override the default, use --bare (-b) and --nobare (-n) options."
+      echo "To override the default use --bare (-b) or --nobare (-n)."
       exit;;
     -*)
       echo "Unknown option $1. Run $(basename "$0") --help for help."
