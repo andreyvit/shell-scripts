@@ -1,22 +1,33 @@
 #! /bin/bash
-bare=true
 cont=true
+bare=""
 while $cont && test -n "$1"; do
   case $1 in
     --bare | -b)
       bare=true
       shift;;
-    --nobare | --normal | -n)
+    --nobare | -n)
       bare=false
       shift;;
+    --help)
+      echo "Initializes a remote Git repository over SSH."
+      echo "Usage:"
+      options="[--bare | --nobare]"
+      echo "  $(basename "$0") $options ssh://host.com//path/to/repos.git"
+      echo "  $(basename "$0") $options ssh://host.com/~user/path/to/repos"
+      echo "  $(basename "$0") $options host.com:/path/to/repos"
+      echo "  $(basename "$0") $options host.com:~user/path/to/repos.git"
+      echo ""
+      echo "By defaults the repositories ending with \".git\" are bare, and all others are not."
+      echo "To override the default, use --bare (-b) and --nobare (-n) options."
+      exit;;
     -*)
-      echo "Unknown option $1."
+      echo "Unknown option $1. Run $(basename "$0") --help for help."
       exit 200;;
     *)
       cont=false;;
   esac
 done
-
 
 url="$1"
 case $url in
@@ -40,7 +51,11 @@ case $url in
     exit
 esac
 
+echo "bare=$bare"
+test -n "$bare" || if test "$repos_path" == "${repos_path%.git}"; then bare=false; else bare=true; fi
+echo "bare=$bare"
+
 test -n "$port" || port=22
-$base && git_dir="$repos_path"
-$base || git_dir="$repos_path/.git"
+$bare && git_dir="$repos_path"
+$bare || git_dir="$repos_path/.git"
 ssh -p $port $host "mkdir -p $repos_path && cd $repos_path && GIT_DIR=$git_dir git-init"
