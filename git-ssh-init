@@ -13,8 +13,8 @@ while $cont && test -n "$1"; do
       echo "Initializes a remote Git repository over SSH."
       echo "Usage:"
       options="[--bare | --nobare]"
-      echo "  $(basename "$0") $options ssh://host.com//path/to/repos.git"
-      echo "  $(basename "$0") $options ssh://host.com/~user/path/to/repos"
+      echo "  $(basename "$0") $options ssh://host.com:22//path/to/repos.git"
+      echo "  $(basename "$0") $options ssh://host.com:2222/~user/path/to/repos"
       echo "  $(basename "$0") $options host.com:/path/to/repos"
       echo "  $(basename "$0") $options host.com:~user/path/to/repos.git"
       echo ""
@@ -51,9 +51,7 @@ case $url in
     exit
 esac
 
-echo "bare=$bare"
 test -n "$bare" || if test "$repos_path" == "${repos_path%.git}"; then bare=false; else bare=true; fi
-echo "bare=$bare"
 
 test -n "$port" || port=22
 $bare && git_dir="$repos_path"
