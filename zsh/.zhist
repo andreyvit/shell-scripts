@@ -1,0 +1,1785 @@
+: 1187441616:0;hg clone http://hg.tarantsov.com/test/
+: 1187441623:0;cd test
+: 1187441666:0;hg push https://hg.tarantsov.com/test/
+: 1187443093:0;mkdir charodei
+: 1187443095:0;rails charodei
+: 1187443105:0;cd charodei
+: 1187443134:0;sudo gem install capistrano
+: 1187447516:0;cat pubc
+: 1187447523:0;mate pubc
+: 1187449113:0;cap
+: 1187449117:0;capify .
+: 1187449551:0;hg push ssh://tarantsov.com/sites/hg.tarantsov.com/repos/charodei
+: 1187449637:0;hg push ssh://tarantsov.com/sites/hg.tarantsov.com/repos/charodei/
+: 1187449648:0;hg push ssh://tarantsov.com/sites//hg.tarantsov.com/repos/charodei/
+: 1187449672:0;hg ci -m "current state"
+: 1187449674:0;hg push ssh://tarantsov.com//sites/hg.tarantsov.com/repos/charodei/
+: 1187449799:0;cap deploy:setup
+: 1187449985:0;cd /usr/local/lib/ruby/gems/1.8/gems/capistrano-2.0.0
+: 1187450113:0;cap deploy:check
+: 1187450265:0;cap deploy:cold
+: 1187501729:0;man zshmisc
+: 1187503006:0;mate .zshrc
+: 1187503451:0;man zshbuiltin
+: 1187504020:0;man zshoptions
+: 1187504036:0;setops
+: 1187504331:0;setopt nolistbeep
+: 1187504377:0;setopt automenu
+: 1187504386:0;setopt noautomenu
+: 1187504446:0;=ls
+: 1187504452:0;echo =ls
+: 1187504564:0;!setop
+: 1187504989:0;setopt correct=2
+: 1187504991:0;setopt correct
+: 1187504997:0;setopt correct_all
+: 1187505003:0;setopt
+: 1187505013:0;setopt ncorrect_all
+: 1187505022:0;setopt /us/bin
+: 1187505024:0;setopt /usr/bin
+: 1187505042:0;ls /us/bin
+: 1187505051:0;ls /usr/bin
+: 1187505112:0;ls ~/Documents
+: 1187505328:0;man zsh
+: 1187505343:0;man zshzle
+: 1187505531:0;stty
+: 1187505535:0;stty -m
+: 1187505538:0;stty -a
+: 1187510302:0;ps aux | grep QuickSi
+: 1187510319:0;kill 2391
+: 1187510327:0;kill -9 2391
+: 1187511081:0;rm -rf ~/Documents/workspace/org.jruby
+: 1187511102:0;sudo rm -rf ~/Documents/workspace/org.jruby
+: 1187516640:0;hg addremove $f19 $f18
+: 1187516670:0;hg ci $f19 $f18
+: 1187517267:0;hg-st | grep Schema
+: 1187517297:0;hg ci $f6
+: 1187518926:0;cat _hg-st
+: 1187518931:0;pubc _hg-st
+: 1187518950:0;cat /etc/profile
+: 1187519054:0;cd -2
+: 1187519101:0;pubc .zshrc
+: 1187519110:0;pubc .zshenv
+: 1187519260:0;ls Music/iTunes/
+: 1187519267:0;ls Music/iTunes
+: 1187520126:0;hg ci --help
+: 1187520167:0;hg ci -A $f18 $f19 $f20 $f6
+: 1187520303:0;ls .hgignore
+: 1187520306:0;cat .hgignore
+: 1187526284:0;hg clone ssh://yoursway.com/~dottedmag/tailor/ys mag-ys-svn
+: 1187527195:0;ls mag*
+: 1187527212:0;hg clone ssh://yoursway.com/~hg/yourswayide-trunk mag-ys-svn
+: 1187527220:0;hg clone ssh://yoursway.com/~hg/yourswayide-trunk ys-trunk
+: 1187528341:0;echo $EMAIL
+: 1187531139:0;hg ci -A $f6 $f18 $f9 $f10
+: 1187544035:0;rm -rf ys-trunk/
+: 1187544051:0;hg clone ssh://yoursway.com/~hg/yourswayide-trunk common-trunk
+: 1187544936:0;rails gtd
+: 1187544953:0;cd gtd
+: 1187549519:0;script/generate migration Bootstrap
+: 1187550246:0;script/generate model Item
+: 1187550342:0;script/generate model Field
+: 1187550351:0;script/generate model Tag
+: 1187550361:0;script/generate model Relation
+: 1187550371:0;script/generate model Change
+: 1187550585:0;sudo gem install guid
+: 1187550626:0;sudo gem install uuid
+: 1187550650:0;sudo uuid-setup
+: 1187550750:0;cd /usr/local/lib/ruby/gems/1.8/gems/uuid-1.0.3/lib
+: 1187550755:0;cat uuid.rb
+: 1187550774:0;cd -1
+: 1187550784:0;cd +1
+: 1187550872:0;sudo chmod a+w /usr/local/lib/ruby/gems/1.8/gems/uuid-1.0.3/uuid.state
+: 1187551257:0;cd Projects/Diploma/ujudge_webe/
+: 1187551259:0;cd config
+: 1187551264:0;cat environments
+: 1187551267:0;cat environment.rb
+: 1187551385:0;cd memcache-client-1.3.0
+: 1187551667:0;cd activerecord-1.15.3
+: 1187552399:0;man dirs
+: 1187552412:0;dirs --help
+: 1187552415:0;dirs -a
+: 1187552416:0;dirs -n
+: 1187552419:0;dirs -o
+: 1187552434:0;man zshbuiltins
+: 1187552463:0;cd -3
+: 1187552473:0;dirs
+: 1187552483:0;cd +2
+: 1187552488:0;dirs -ov
+: 1187552495:0;cd +4
+: 1187552517:0;dirs +1
+: 1187552521:0;dirs -pv
+: 1187552578:0;script/generate controller Admin list_items
+: 1187552907:0;cd ../gtd
+: 1187553441:0;chmod +x script/makeuuid
+: 1187553493:0;script/makeuuid 2
+: 1187554348:0;chmod +x script/bootstrap
+: 1187554901:0;mate /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb
+: 1187555195:0;script/makeuuid
+: 1187555634:0;memcached --help
+: 1187555637:0;memcached -?
+: 1187555638:0;memcached
+: 1187555641:0;man memcached
+: 1187556537:0;rake db:schema:load
+: 1187556562:0;rake db:migrate VERSION=0
+: 1187557843:0;mate ~/.zshrc
+: 1187557862:0;cd Projects/gtd
+: 1187557973:0;hg init ssh://tarantsov.com/~andreyvit/cardo-trunk
+: 1187560852:0;script/bootstrap
+: 1187561213:0;kill -9 9301
+: 1187561326:0;killall ruby
+: 1187562878:0;killall -9 ruby
+: 1187563073:0;mysql -uroot -Dcardo_development
+: 1187563827:0;memcached -vv
+: 1187564238:0;!
+: 1187564667:0;hg push ssh://tarantsov.com/~andreyvit/cardo-trunk
+: 1187626353:0;sudo easy_install ZSI
+: 1187626658:0;mate /opt/local/Library/Frameworks/Python.framework/Versions/2.4/lib/python2.4/site-packages/
+: 1187626735:0;zip t ZSI-2.0_rc3-py2.4.egg
+: 1187626750:0;unzip -l ZSI-2.0_rc3-py2.4.egg
+: 1187626763:0;unzip ZSI-2.0_rc3-py2.4.egg
+: 1187626770:0;sudo unzip ZSI-2.0_rc3-py2.4.egg
+: 1187627089:0;sudo easy_install SOAPpy
+: 1187627113:0;sudo easy_install soappy
+: 1187627125:0;sudo easy_install soapy
+: 1187628769:0;tar xzf SOAPpy-0.12.0.tar.gz
+: 1187628772:0;cd SOAPpy-0.12.0
+: 1187628799:0;у�у�т у�дman sl
+: 1187628801:0;man sl
+: 1187628808:0;sl
+: 1187628818:0;sudo port install sl
+: 1187671353:0;mkdir kt
+: 1187671358:0;rmdir kt
+: 1187671360:0;cd key-tec
+: 1187671694:0;cp ~/Documents/Parallels/Windows\ XP/Windows\ Disks/C/workspace-epp/de.allesklar.wsimport/resources/META-INF/ImportService.wsdl ./
+: 1187671699:0;mate ImportService.wsdl
+: 1187671788:0;mate impclient.py
+: 1187673200:0;wsdl2py ImportService.wsdl
+: 1187673221:0;wsdl2py --file ImportService.wsdl
+: 1187673231:0;mate Import_services
+: 1187673236:0;mate Import_services.*
+: 1187673258:0;mate Import_services_types.py
+: 1187673959:0;cp ~/Documents/Parallels/Windows\ XP/Windows\ Disks/C/workspace-epp/de.allesklar.wsimport.client/payload* ./
+: 1187673967:0;mate payload.xml
+: 1187674232:0;mate debug.out
+: 1187674266:0;nc
+: 1187674580:0;mate correct-envelope
+: 1187674583:0;mate correct-envelope.xml
+: 1187674686:0;python impclient.py
+: 1187674718:0;sudo mv ZSI-2.0_rc3-py2.4.egg ZSI-2.0_rc3-py2.4.egg.hidden
+: 1187675585:0;cd Downloads/
+: 1187675596:0;tar xzf ZSI-1.7.tar.gz
+: 1187675601:0;cd ZSI-1.7/
+: 1187675665:0;sudo mv ZSI /home/andreyvit/
+: 1187675674:0;sudo mv ZSI /Users/andreyvit
+: 1187675692:0;sudo python setup.py
+: 1187675697:0;sudo python setup.py install
+: 1187675964:0;cd /opt/local/Library/Frameworks/Python.framework/Versions/2.4/lib/python2.4/site-packages/
+: 1187675985:0;sudo easy_install PyXML
+: 1187675997:0;sudo easy_install PyXML 0.7
+: 1187676005:0;sudo easy_install PyXML=0.7
+: 1187676012:0;easy_install --help
+: 1187677057:0;sudo mv PyXML-0.8.4-py2.4-macosx-10.4-i386.egg ~/
+: 1187677083:0;nc -l -p3333
+: 1187767590:0;ping cvs.key-tec.de
+: 1187770857:0;cd /Stage
+: 1187770865:0;cp ~/Downloads/RubyCocoa-0.12.0.tgz ./
+: 1187770870:0;tar xzf RubyCocoa-0.12.0.tgz
+: 1187770876:0;ls *.tgz
+: 1187770880:0;rm RubyCocoa-0.12.0.tgz
+: 1187770882:0;cd RubyCocoa-0.12.0
+: 1187770933:0;ruby install.rb --help
+: 1187771004:0;ruby install.rb show
+: 1187771008:0;ruby install.rb config
+: 1187771017:0;ls =ruyb
+: 1187771019:0;ls =ruby
+: 1187772168:0;/usr/bin/ruby
+: 1187772175:0;/usr/bin/irb
+: 1187772213:0;cd /usr/lib/ruby/site_ruby/1.8/
+: 1187772422:0;ls lib
+: 1187772425:0;ls lib/osx/
+: 1187772458:0;locate oc_all.rbv
+: 1187772459:0;locate oc_all.rb
+: 1187772520:0;cd /Library/Frameworks/RubyCocoa.framework/Versions/Current/Resources/ruby/osx/objc
+: 1187772526:0;cd osx
+: 1187773165:0;cd /Developer/Examples/RubyCocoa
+: 1187773226:0;mkdir ~/Temp/RubyCocoa
+: 1187773243:0;/usr/bin/ruby buildall.rb ~/Temp/RubyCocoa
+: 1187773370:0;cd ~/Temp/RubyCocoa
+: 1187863935:0;nc -l -p 3333
+: 1187866989:0;ls /Volumes/Macintosh\ HD/
+: 1188116365:0;precmd(){ pwd>&7;kill -STOP $$ }
+: 1188116436:0;ping microsoft.com
+: 1188116452:0;hnet.ru
+: 1188247980:0;mv Picture\ 38.png Screenshots/parallels_with_shadows.png
+: 1188277669:0;kill -9 99
+: 1188277673:0;kill -9 2460
+: 1188277709:0;ps aux | grep rec
+: 1188277711:0;ps aux | grep burn
+: 1188277717:0;ps aux | grep -i burn
+: 1188277719:0;ps aux | grep -i rec
+: 1188277721:0;ps aux | grep -i cd
+: 1188321085:0;hg ci com.yoursway.ruby.wala
+: 1188328252:0;cd /System/Library/Frameworks/JavaVM.framework/Versions/1.5.0
+: 1188328255:0;cd Home
+: 1188328257:0;cd lib
+: 1188328278:0;open n.
+: 1188328285:0;open `pwd`
+: 1188331955:0;cat +rails
+: 1188331957:0;cat =rails
+: 1188413722:0;hg push http://yoursway.com/ys-unstable
+: 1188413731:0;hg push http://yoursway.com/~andreyvit/ys-unstable
+: 1188489939:0;hg-st com.yoursway.ruby.wala
+: 1188489944:0;hg ci -A com.yoursway.ruby.wala
+: 1188490367:0;hg diff com.yoursway.ruby.wala
+: 1188490535:0;cat hgrc
+: 1188490546:0;mate hgrc
+: 1188492875:0;ssh 192.168.0.12
+: 1188492912:0;man ssh
+: 1188492929:0;ssh 192.168.0.12 -l next
+: 1188503909:0;cp -r ~/Documents/workspace/org.jruby ./
+: 1188503924:0;ls ~/Documents/workspace
+: 1188503933:0;cp -r ~/Documents/workspace/orj.jruby ./
+: 1188503946:0;hg ci -A orj.jruby
+: 1188509783:0;cat ktps_setup_12_en.exe
+: 1188509798:0;mate ktps_setup_12_en.exe
+: 1188580045:0;say kewl
+: 1188660527:0;ln -s /Volumes/External\ HD/briket_raw ira_photos
+: 1188811065:0;cat =pubc
+: 1188811269:0;гunzip nsu_kultura_rechi.zip
+: 1188811301:0;cp nsu_kultura_rechi.zip /tmp
+: 1188811307:0;unzip nsu_kultura_rechi.zip
+: 1188811310:0;cd 0
+: 1188811315:0;pubc nsu_kultura_rechi.zip
+: 1188811352:0;cd /tmp
+: 1188811353:0;wget http://files.tarantsov.com/nsu_kultura_rechi.zip
+: 1188811371:0;unzip nsu_kultura_rechi.zip.1
+: 1188811528:0;rm nsu_kultura_rechi.zip
+: 1188811532:0;rm qt_temp.e9PB9E
+: 1188811555:0;cd ~/Mo
+: 1188811558:0;cd ~/Movies
+: 1188811594:0;kill -9 194
+: 1188881121:0;diskutil eject -force /Volumes/External\ HD
+: 1188922094:0;hg diff $f8 $f9
+: 1188922119:0;hg ci $f8 $f9
+: 1188922142:0;hg push
+: 1188927917:0;ssh -p 10022 fuzlez.com
+: 1188927927:0;ssh -p 10022 fuzlez.com -l fuzlez
+: 1188927998:0;ssh -p 10022 fuzlez.com -l root
+: 1188972351:0;kill -9 270
+: 1188972366:0;open /Applications/Quicksilver.app/Contents/MacOS/Quicksilver
+: 1188982745:0;ls /Volumes
+: 1188982754:0;cd /Volumes
+: 1188982762:0;rmdir External\ HDt
+: 1188982764:0;rmdir External\ HD
+: 1188982779:0;ls -l External\ HH1
+: 1188982784:0;ls -l External\ HD\ 1
+: 1188982786:0;ls -l External\ HD
+: 1188982795:0;cd "`echo -e '\0057Volumes\0057External\0040HD\0057briket'`"
+: 1188982804:0;cd "`echo -e '\0057Volumes\0057External\0040HD'`"
+: 1188982835:0;cd "`echo -e '\0057'`"
+: 1188982836:0;cd "`echo -e '\0057Volumes'`"
+: 1189009853:0;ping www.apple.com
+: 1189067313:0;cd /Users/andreyvit/Projects/Ѓ�сесибирскау�\  �\ 2007/
+: 1189067324:0;cd /Users/andreyvit/Projects/Ѓ�сесибирскау�\  �\ 2007/Реку�рсивну�и̃�\ лабиринт/
+: 1189067388:0;gcc -g -o maze maze.cpp && maze
+: 1189067394:0;g++ -g -o maze maze.cpp && maze
+: 1189067402:0;g++ -g -o maze maze.cpp && ./maze
+: 1189067408:0;cat >input.txt
+: 1189095625:0;wget /5/2047/1413/1_h264_110/1a1a1ae656c632970267e04ebd3196c428970e7ce857b81c4aab1677e445aedc3fae1b4a7bafe013/63827621b_1_220.mov
+: 1189127877:0;cd Projects/tum/graph/
+: 1189127915:0;iconv -f cp1251 -t utf-8 GraphWrapper.h GraphWrapper.utf.h
+: 1189127920:0;iconv -f cp1251 -t utf-8 GraphWrapper.h >GraphWrapper.utf.h
+: 1189129297:0;g++ -g -o main main.cpp
+: 1189129434:0;g++ -g -Wall -o main main.cpp
+: 1189129487:0;g++ -g -Wall -o main main.cpp | less -
+: 1189129494:0;g++ -g -Wall -o main main.cpp 2>&1 | less -
+: 1189130038:0;g++ -g -Wall -o main main.cpp 2>&1 | grep Foo | less -
+: 1189130082:0;g++ -g -Wall -o main main.cpp 2>&1 | grep Foo && echo ok
+: 1189130167:0;grep VirtIterator *.h *.cpp
+: 1189130233:0;g++ -g -Wall -o main main.cpp 2>&1 | grep Foo
+: 1189130556:0;g++ --version
+: 1189130790:0;g++-3.3 main.cpp
+: 1189130797:0;g++ main.cpp
+: 1189131117:0;g++ -fpermissive main.cpp
+: 1189131776:0;g++ -g -Wall -o main main.cpp 2>&1
+: 1189131901:0;g++ -g -o main main.cpp 2>&11
+: 1189134511:0;hg add $f1 $f3 $f22 $f24 $f25 $f32
+: 1189134550:0;hg init ~/Temp/graphs
+: 1189136401:0;g++ -Wall main.cpp
+: 1189136491:0;g++ -g -o main main.cpp 2>&1
+: 1189136534:0;./main
+: 1189136562:0;hg add floyd.h
+: 1189136589:0;hg push ~/Temp/graphs
+: 1189137437:0;mv classify_edges.h classify_edges.h.utf
+: 1189137451:0;iconv -f utf-8 -t cp1251 classify_edges.h.utf >classify_edges.h
+: 1189137483:0;mv GraphWrapper.h GraphWrapper.h.utf
+: 1189137493:0;iconv -f utf-8 -t cp1251 GraphWrapper.h.utf >GraphWrapper.h
+: 1189137519:0;mv GraphDisplay.h GraphDisplay.h.utf
+: 1189137527:0;iconv -f utf-8 -t cp1251 GraphDisplay.h.utf >GraphDisplay.h
+: 1189262377:0;dig 10.4.0.24
+: 1189262387:0;host 10.4.0.24
+: 1189262402:0;ping olymp_srv.ccfit.nsu.ru
+: 1189269182:0;mv ujudgecvs-20070720.tar.bz2 ~/Projects/Diploma/
+: 1189269187:0;cd ~/Projects/Diploma/
+: 1189269204:0;tar tjf ujudgecvs-20070720.tar.bz2 | head -10
+: 1189269227:0;ls ujudge
+: 1189269238:0;tar xjf ujudgecvs-20070720.tar.bz2
+: 1189269251:0;tar tjf ujudgecvs-20070720.tar.bz2 | head -20
+: 1189269298:0;cvs -dujudge co ujudgew
+: 1189269317:0;cvs -d/Users/andreyvit/Projects/Diploma/ujudge co ujudgew
+: 1189272130:0;find . -type d -name CVS -exec rm -rf \{} \;
+: 1189272140:0;find . -type d -name CVS -exec rm -rf '{}' \;
+: 1189272156:0;find . -type d -name CVS
+: 1189272160:0;hg init .
+: 1189272426:0;hg init ssh://tarantsov.com/ujudge-unstable
+: 1189289577:0;ssh ccfit.nsu.ru
+: 1189290626:0;script/generate migration AddMemberCount
+: 1189291054:0;rake db:migrate VERSION=30
+: 1189294820:0;cp .ssh/id_rsa ~/Documents/Parallels/Windows\ XP/Windows\ Disks/C/ujudge
+: 1189300413:0;hg ci -A $f1 $f2 $f3 $f4 $f5
+: 1189300448:0;hg ci -A $f2 $f3 $f5 $f6
+: 1189300682:0;hg log lib/judge/server/process_tests_upload_job.rb
+: 1189300696:0;hg st lib/judge/server/process_tests_upload_job.rb
+: 1189300699:0;hg ci lib/judge/server/process_tests_upload_job.rb
+: 1189302536:0;cd /Users/andreyvit/Projects/Diploma/тренировки/
+: 1189302538:0;lls
+: 1189302541:0;cd solutions
+: 1189302549:0;mv 1.java Task.java
+: 1189302552:0;javac Task.java
+: 1189302570:0;cp ../tests/1/1.in ./input.txt
+: 1189302575:0;java Task
+: 1189302587:0;cat ../tests/2/1.out
+: 1189302591:0;cat ../tests/1/1.out
+: 1189311210:0;�
+: 1189314538:0;cp .ssh/id_rsa /Volumes/FLASH
+: 1189318292:0;script/generate migration AddForms
+: 1189318330:0;script/generate migration GenericForms
+: 1189319343:0;script/generate scaffold forms
+: 1189319453:0;script/destroy scaffold Forms
+: 1189319773:0;cat app/models/form.rb
+: 1189320036:0;script/generate resource Form
+: 1189320166:0;script/generate scaffold Form
+: 1189321289:0;script/generate scaffold Resource
+: 1189321294:0;script/generate scaffold Field
+: 1189325235:0;hg ci -A $f1 $f2 $f3 $f4 $f5 $f6 $f7 $f8 $f9 $f10 $f11 $f12 $f13 $f14 $f15 $f16 $f17 $f18 $f19 $f20 $f21 $f22 $f25 $f29 $f30 $f31
+: 1189325323:0;rm $f1 $f2
+: 1189325757:0;script/generate model PerMemberData
+: 1189326226:0;script/generate migration RenamePerMemberDataTable
+: 1189327095:0;mate app/helpers/grouped_form_helper.rb
+: 1189329525:0;mate /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.3/lib/active_record/validations.rb
+: 1189329592:0;rake db:fixtures:dump FIXTURES=forms,fields
+: 1189329998:0;hg ci -A $f1 $f2 $f3 $f4 $f5 $f6 $f7 $f8 $f9 $f10 $f11 $f12
+: 1189351670:0;cd ~/Downloads/
+: 1189351676:0;cd yed-2.4.2.2/ls
+: 1189351677:0;cd yed-2.4.2.2/
+: 1189351681:0;java -jar yed.jar
+: 1189390797:0;cd ~/Projects/Diploma/ujudgew
+: 1189391226:0;ls ~/Music
+: 1189391237:0;cd ~/Music
+: 1189391242:0;cd iTunes/iTunes\ Music/
+: 1189391252:0;du --max-depth 1 -H
+: 1189391262:0;du -d 1 -H
+: 1189391266:0;du -d 1
+: 1189391271:0;du --help
+: 1189391280:0;du -d 1 -h
+: 1189391296:0;du -d 1 | sort -u
+: 1189391300:0;du -d 1 | sort
+: 1189391302:0;du -d 1 | sort -n
+: 1189391317:0;df -h /Volumes/External\ HD
+: 1189391328:0;cd /Volumes/External\ HD
+: 1189391332:0;cd Movies
+: 1189391339:0;rm Terminator\ 3\ HDTV.avi
+: 1189391346:0;df -h ..
+: 1189391368:0;mv Arabesque /Volumes/External\ HD/Music
+: 1189395578:0;ssh 10.4.0.24
+: 1189395587:0;ssh 10.4.0.24 -lAdministrator
+: 1189395606:0;tracert 10.4.0.24
+: 1189395610:0;traceroute 10.4.0.24
+: 1189395639:0;ssh 10.4.0.24 -lAdministrator -Wions84
+: 1189395645:0;ssh 10.4.0.24 -lAdministrator "-Wions84
+: 1189395652:0;ssh 10.4.0.24 -lAdministrator '-Wions84!cern'
+: 1189395995:0;ping 10.4.0.24
+: 1189396042:0;telnet 10.4.0.24 80
+: 1189396051:0;ssh jury@ccfit.nsu.ru -Wmultimedia -L3389:10.4.0.24:3389
+: 1189429689:0;cd Storage/
+: 1189429690:0;ls proof_of_marriage.webarchive
+: 1189430142:0;cd Desktop/Screenshots
+: 1189430145:0;ls -l proof_of_marriage.png
+: 1189430259:0;wget http://files.tarantsov.com/proof_of_marriage.png
+: 1189604868:0;cat /etc/resolv.conf
+: 1189604882:0;ping 217.117.80.1
+: 1189604888:0;dig www.google.com действителу�но
+: 1189604896:0;dig www.google.com дейс217.117.80.1
+: 1189604915:0;dig www.google.com 192.168.0.1
+: 1189604945:0;dig www.google.com 217.117.80.1
+: 1189678181:0;ps | aux
+: 1189678254:0;for((i=0;i<300;i++)); do ((echo proc $i; sleep 10) &); done
+: 1189678264:0;for((i=0;i<300;i++)); do ( (echo proc $i; sleep 10) & ); done
+: 1189678269:0;for((i=0;i<300;i++)); do ( ( echo proc $i; sleep 10 ) & ); done
+: 1189678281:0;bash
+: 1189738869:0;say -v "Bad News" "five o'clock"
+: 1189738882:0;ls / | say -v "Bad News"
+: 1189738957:0;say -v "Bad News" 89545
+: 1189738970:0;say -v "Bad News" 8954
+: 1189826503:0;ping login.icq.com
+: 1189826664:0;ping
+: 1189842585:0;script/server webrick &
+: 1189842595:0;kill -9 11603
+: 1189843071:0;rake db:schema:load -edev2
+: 1189843078:0;rake db:schema:load RAILS_ENV=dev2
+: 1189843094:0;mysql -uroot -Dujudge_development_2
+: 1189843837:0;cp -r ujudgew dupujudgew
+: 1189843966:0;rm test/fixtures/compilation_errors.yml
+: 1189843973:0;rm test/fixtures/compilers.copy.yml
+: 1189843988:0;rm test/fixtures/entities.yml
+: 1189843990:0;rm test/fixtures/objects.yml
+: 1189843997:0;rm test/fixtures/forms.future.yml
+: 1189844016:0;rm test/fixtures/forms.yml
+: 1189844026:0;rm test/fixtures/participations.yml
+: 1189844246:0;cd test/fixtures
+: 1189844266:0;perl -i -pe 's/\r//' password_sets.yml
+: 1189844268:0;cd -
+: 1189844271:0;rake db:fixtures:load RAILS_ENV=dev2 FIXTURES=password_sets
+: 1189844454:0;rm test/fixtures/per_member_datas.yml
+: 1189844473:0;rm test/fixtures/rating_definitions.yml
+: 1189844478:0;rm test/fixtures/ratings.yml
+: 1189844489:0;rm test/fixtures/registration_specifications.yml
+: 1189844617:0;rm test/fixtures/types.yml
+: 1189844631:0;rm test/fixtures/values.yml
+: 1189844640:0;rm test/fixtures/words.yml
+: 1189844876:0;cd dupujudgew
+: 1189848774:0;rake db:fixtures:load RAILS_ENV=dev2
+: 1189848886:0;script/server webrick -e dev2
+: 1189849410:0;hg ci $f1 $f2 $f3 $f5
+: 1189889235:0;cd Projects/Diploma/trains/2/attachments/done
+: 1189889243:0;for i in *; do echo $i; done
+: 1189889272:0;for i in *; do (cd $i; for j in $i*.*; do echo $j; done); done
+: 1189889283:0;for i in *; do (cd $i; for j in $i*.*; do echo ${j#$i}; done); done
+: 1189889290:0;for i in *; do (cd $i; for j in $i*.*; do echo mv $j ${j#$i}; done); done
+: 1189889296:0;for i in *; do (cd $i; for j in $i*.*; do mv $j ${j#$i}; done); done
+: 1190087419:0;say "I envy not in any moods"
+: 1190087436:0;say "The linnet born within the cage"
+: 1190087444:0;say "The linnet born within the cage" -v "Bad News"
+: 1190087453:0;say -v "Bad News" "The linnet born within the cage"
+: 1190087564:0;say "I hold it true, whate'er befall"
+: 1190087583:0;say "'Tis better to have loved and lost"
+: 1190087598:0;cat | say -
+: 1190087605:0;cat | say
+: 1190098024:0;cd /Applications/Eclipse\ 3.3.app/Contents/Resources/Java/plugins/
+: 1190098032:0;ls -d *equ*
+: 1190098132:0;cp ~/Downloads/org.eclipse.equinox.event_1.0.100.v20070516.jar ./
+: 1190108181:0;cd ~/Documents/Parallels/Windows\ XP/Windows\ Disks/C/workspace-epp/org.opencube.domaincube/src/org/opencube/domaincube/oms/datamapping/data/
+: 1190108187:0;cd core
+: 1190108222:0;cat AbstractDomain.java | say -v "Bad News"
+: 1190108244:0;cd ~/Documents/Parallels/Windows XP/Windows Disks/C/workspace-epp/org.opencube.domaincube/src/org/opencube/domaincube/oms/datamapping/core
+: 1190108248:0;cd "~/Documents/Parallels/Windows XP/Windows Disks/C/workspace-epp/org.opencube.domaincube/src/org/opencube/domaincube/oms/datamapping/core"
+: 1190108265:0;cd "Documents/Parallels/Windows XP/Windows Disks/C/workspace-epp/org.opencube.domaincube/src/org/opencube/domaincube/oms/datamapping/core"
+: 1190108270:0;mate AbstractDomain.java
+: 1190179357:0;cd ,,
+: 1190179359:0;cd ujudge
+: 1190184448:0;hg ci $f1 $f2 $f3 $f4 $f5 $f7
+: 1190186680:0;host 193.124.208.121
+: 1190186693:0;ping 193.124.208.121
+: 1190355869:0;script/server
+: 1190382373:0;true
+: 1190382584:0;cp �~fourdman/
+: 1190382623:0;mkdir Projects/pottosin07
+: 1190382628:0;cp ~fourdman/dhl Projects/pottosin07
+: 1190382634:0;cp -r ~fourdman/dhl Projects/pottosin07/
+: 1190388270:0;hg init ssh://tarantsov.com/~andreyvit/pottosin07-dhl
+: 1190400170:0;scp 192.168.1.138:/Users/fourdman/wso2007/logistics/log ./
+: 1190400178:0;mate log
+: 1190400220:0;scp 192.168.1.138:/Users/fourdman/wso2007/logistics/tests/70.{in.out} ./
+: 1190400232:0;scp 192.168.1.138:/Users/fourdman/wso2007/logistics/tests/70.in ./
+: 1190400241:0;scp 192.168.1.138:/Users/fourdman/wso2007/logistics/tests/70.out ./
+: 1190404613:0;hg clone ssh://tarantsov.com/~fourdman/logistics
+: 1190447079:0;rm log
+: 1190447444:0;scp 192.168.0.165:�~/wso2007/logistics/tests/114.in
+: 1190447446:0;scp 192.168.0.165:�~/wso2007/logistics/tests/114.in ./
+: 1190447458:0;scp 192.168.0.165:~/wso2007/logistics/tests/114.in ./
+: 1190447483:0;scp 192.168.0.165:~fourdman/wso2007/logistics/tests/114.in ./
+: 1190447499:0;mv 114.in ../dhl
+: 1190447502:0;cd ../dhl
+: 1190449051:0;cd logistics
+: 1190449129:0;ping 192.168.0.168
+: 1190449316:0;cd /usr/bin
+: 1190449320:0;sudo bash
+: 1190449357:0;ssh localhost hg
+: 1190449367:0;cat /usr/bin/hg
+: 1190449497:0;ssh 192.168.0.165 hg
+: 1190449512:0;hg pull ssh://192.168.0.165/wso2007/logistics
+: 1190449587:0;hg -v -v pull ssh://192.168.0.165/wso2007/logistics
+: 1190449597:0;ssh 192.168.0.165 "hg -R wso2007/logistics serve --stdio"
+: 1190449615:0;ssh 192.168.0.165 "ls wso2007/logistics"
+: 1190449635:0;hg -v -v pull ssh://192.168.0.165/~fourdman/wso2007/logistics
+: 1190449647:0;mate /usr/bin/hg
+: 1190449918:0;sudo passwd tve
+: 1190450798:0;ping 192.168.0.165
+: 1190450918:0;hg init /Volumes/Untitled/logistics-fourdman
+: 1190450933:0;hg push /Volumes/Untitled/logistics-fourdman
+: 1190455796:0;hg init /Volumes/Untitled/tarantsov-dhl
+: 1190455802:0;hg push /Volumes/Untitled/tarantsov-dhl
+: 1190465978:0;ping hnet.ru
+: 1190470064:0;cd dhl
+: 1190470075:0;hg push ssh://tarantsov.com/~andreyvit/pottosin07-dhl
+: 1190486012:0;script/generate migration AddContestRules
+: 1190492977:0;cd Projects/pottosin07/dhl/src
+: 1190492980:0;mate Task.java
+: 1190493980:0;cd Projects/pottosin07/dhl
+: 1190493988:0;hg pull ssh://tarantsov.com/~fourdman/dhl
+: 1190522080:0;cdgems
+: 1190522603:0;hg ci $f1 $f2 $f4 $f5
+: 1190522637:0;ping tarantsov.com
+: 1190529432:0;hg revert $f1
+: 1190531133:0;rm $f1
+: 1190534942:0;script/generate migration AddProblemTestDependencies
+: 1190537756:0;ping www.academ.org
+: 1190537762:0;ping buriy.academ.org
+: 1190537778:0;ssh jury@ccfit.nsu.ru -Wmultimedia
+: 1190537789:0;ssh jury@ccfit.nsu.ru -Wmultimediac
+: 1190539765:0;hg add $f9
+: 1190540098:0;script/generate controller TeamProblemTests
+: 1190540153:0;script/destroy controller TeamProblemTests
+: 1190541974:0;hg add $f3 $f4
+: 1190542868:0;cd gems
+: 1190546001:0;scp Mercurial-0.9.4-bbdcdc7f170e.exe ssh://jury@ccfit.nsu.ru:~/tarantsov/
+: 1190546182:0;scp Mercurial-0.9.4-bbdcdc7f170e.exe jury@ccfit.nsu.ru:~/tarantsov/
+: 1190547796:0;sudo su nsuguest
+: 1190551759:0;script/generate migration AddQuestionProblemId
+: 1190552660:0;hg add $f8
+: 1190621025:0;kill -9 258
+: 1190621027:0;ps aux | grep iTunes
+: 1190621038:0;kill -9 596
+: 1190621046:0;ps aux | grep Finder
+: 1190621053:0;kill -9 609
+: 1190621424:0;script/generate migration AddContestRatingVisibility
+: 1190622268:0;hg add $f10
+: 1190622302:0;hg ci $f1 $f2 $f3 $f3 $f5 $f6 $f8
+: 1190622321:0;ssh jury@ccfit.nsu.ru -Wmultimedia -L3389:buriy.academ.org:3389
+: 1190623501:0;hg diff $f2
+: 1190623549:0;hg ci $f2
+: 1190628487:0;cd /usr/local/lib/ruby/gems/1.8/
+: 1190628490:0;mate gems
+: 1190629891:0;ri merge
+: 1190629896:0;ri Hash.merge
+: 1190629911:0;ri 'Hash.merge!'
+: 1190632488:0;hg ci $f3 $f5
+: 1190632964:0;hg $f4 $f5
+: 1190632968:0;hg ci $f4 $f5
+: 1190633100:0;hg add $f4 $f5
+: 1190633114:0;hg ci $f1 $f2 $f3 $f4 $f5
+: 1190651755:0;ping fourdman.academ.org
+: 1190651847:0;ssh -p 2222 fourdman.academ.org
+: 1190652027:0;scp -P 2222 fourdman.academ.org:/Users/fourdman/Desktop/Q1.zip ./
+: 1190652940:0;scp -P 2222 fourdman.academ.org:/tmp/Quakev1.1.zip ./
+: 1190652987:0;scp -P 2222 fourdman.academ.org:/tmp/Quakev1.1.dmg ./
+: 1190653551:0;scp -P 2222 fourdman.academ.org:/tmp/Q1.zip ./
+: 1190656233:0;cvs --help-commands
+: 1190656436:0;cvs help export
+: 1190656445:0;cvs -d. export --help
+: 1190656452:0;cvs export --help
+: 1190656455:0;cvs export
+: 1190656465:0;mkdir ~/Temp/99
+: 1190656472:0;cvs init ~/Temp/99
+: 1190656481:0;cvs -d~/Temp/99 init
+: 1190656487:0;cvs -d ~/Temp/99/ init
+: 1190656493:0;cvs -d ~/Temp/99/ export --help
+: 1190656543:0;cvs -d ~/Temp/99/
+: 1190656548:0;cvs -d ~/Temp/99/ --help-commands
+: 1190693440:0;cat =_hg-st
+: 1190700596:0;script/generate migration AddTestListFieldToRun
+: 1190701546:0;time ruby -e 'num = 2; 22.times{ num *= num }; print "\n\n\n", num, "\n\n\n"'
+: 1190701594:0;kill -9 20864
+: 1190701603:0;time ruby -e 'num = 2; 22.times{ num *= num }; print "\n\n\n", num.to_s(2), "\n\n\n"'
+: 1190701618:0;kill %1
+: 1190701657:0;time ruby -e 'num = 2; 22.times { |c| puts "cycle #{c}"; num *= num }; print "done\n\n\n", num.to_s(2), "\n\n\n"'
+: 1190701699:0;ps aux | grep time
+: 1190701707:0;kill -9 20869
+: 1190701727:0;time ruby -e 'num = 2; 22.times { |c| puts "cycle #{c}"; num *= num }; puts "done\n\n"; puts num.to_s(2); puts "\n\n\n"'
+: 1190706904:0;script/drbclient
+: 1190707016:0;hg add $f6 $f9
+: 1190729079:0;hg co $f5
+: 1190733334:0;hg diff $f1 | mate -
+: 1190733392:0;hg addremove public
+: 1190733407:0;hg revert $f329
+: 1190733414:0;mate $f329
+: 1190733427:0;hg revert $f330
+: 1190733479:0;hg revert $f5 $f6 $f7
+: 1190733483:0;hg ci public
+: 1190733515:0;hg add $f5
+: 1190733536:0;mv $f10 public/stylesheets/application.css
+: 1190733544:0;mv $f11 public/stylesheets/forms.css
+: 1190733551:0;mv $f12 public/stylesheets/screen.css
+: 1190733562:0;hg add $f11 $f12
+: 1190746176:0;kill -9 265
+: 1190803433:0;sudo port search gnat
+: 1190803449:0;apt-get
+: 1190803459:0;apt-get install gnat
+: 1190803462:0;sudo apt-get install gnat
+: 1190813165:0;ping 192.168.0.11
+: 1190819749:0;ping 10.3.81.167
+: 1190909665:0;у�ки
+: 1190954600:0;mkdir callgraph
+: 1190954604:0;rmdir callgraph
+: 1190954613:0;mkdir dataflow
+: 1190954961:0;/Applications/Eclipse\ 3.3.app/Contents/MacOS/eclipse -data /Users/andreyvit/Projects/pottosin07
+: 1190954990:0;/Applications/Eclipse\ 3.3.app/Contents/MacOS/eclipse -data @nodefault
+: 1190958270:0;cat >.hgignore
+: 1190960223:0;hg init ssh://taransov.com/~andreyvit/pottosin07-dataflow
+: 1190960229:0;hg init ssh://tarantsov.com/~andreyvit/pottosin07-dataflow
+: 1190976255:0;nc -l -p 8080
+: 1191014310:0;cd recursive_maze
+: 1191014315:0;hg init
+: 1191014321:0;hg add maze.cpp
+: 1191014325:0;cat input.txt
+: 1191014599:0;cat output.txt
+: 1191014609:0;mv input.txt maze.in
+: 1191015762:0;cp maze.in andrey1.in
+: 1191016105:0;cp maze.in andrey2.in
+: 1191016110:0;cp maze.out andrey2.out
+: 1191016116:0;cp andrey1.in maze.in
+: 1191016139:0;cp maze.out andrey1.out
+: 1191016156:0;hg add andrey*
+: 1191016370:0;hg init ssh://tarantsov.com/~andreyvit/pottosin07-maze-solution
+: 1191016776:0;g++ maze.cpp -o maze
+: 1191016849:0;./maze
+: 1191016870:0;hg push ssh://tarantsov.com/~andreyvit/pottosin07-maze-solution
+: 1191083191:0;open statement.pages
+: 1191085013:0;hg pull ssh://tarantsov.com/~fourdman/dataflow/
+: 1191141522:0;hg branch foo
+: 1191141539:0;hg log $f2
+: 1191144536:0;hg log $f3
+: 1191144591:0;echo $f3
+: 1191144613:0;hg branch
+: 1191144617:0;hg branch default
+: 1191144626:0;hg update --help
+: 1191146150:0;ifconfig -a
+: 1191146354:0;ls /home
+: 1191146359:0;cd /Users
+: 1191150187:0;ssh jury@ccfit.nsu.ru -Wmultimedia -L3389:193.124.208.121:3389
+: 1191155269:0;script/generate migration AddStateToTeams
+: 1191155282:0;script/destroy migration AddStateToTeams
+: 1191155299:0;script/generate migration AddDisqualifiedToTeams
+: 1191155741:0;du
+: 1191155789:0;hg add $f6
+: 1191156203:0;hg ci $f1 $f4 $f5 $f6
+: 1191157123:0;hg push ssh://localhost:2222/ujudge-unstable
+: 1191176843:0;killall QuickSilver
+: 1191176846:0;killall Quick
+: 1191176857:0;kill -9 1751
+: 1191221508:0;ps aux | grep Skype
+: 1191221523:0;ps aux | grep -i dock
+: 1191221573:0;kill -9 88
+: 1191221579:0;sudo kill -9 88
+: 1191221608:0;sudo kill -9 89
+: 1191221628:0;sudo kill -9 8840
+: 1191221640:0;reboot
+: 1191308580:0;ping ifolder.com
+: 1191317847:0;hg diff 68
+: 1191317852:0;hg diff -r 68
+: 1191317861:0;hg diff -r 67:68
+: 1191317982:0;hg revert --help
+: 1191317990:0;hg log app/views/teams/register.rhtml
+: 1191317997:0;hg revert -r0 app/views/teams/register.rhtml
+: 1191318000:0;hg diff app/views/teams/register.rhtml
+: 1191318004:0;hg ci app/views/teams/register.rhtml
+: 1191318188:0;ssh jury@ccfit.nsu.ru -Wmultimedia -L3389:193.124.208.121:3389 -L2222:tarantsov.com:22
+: 1191319418:0;ssh jury@ccfit.nsu.ru -Wmultimedia -L3389:193.124.208.121:3389 -L2222:tarantsov.com:22 -L5900:fourdman.academ.org:5900
+: 1191343674:0;ping www.xored.com
+: 1191343684:0;telnet www.xored.com 80
+: 1191344033:0;ping slider.xored.com
+: 1191494784:0;ssh jury@ccfit.nsu.ru -Wmultimedia -L3389:193.124.208.119:3389 -L2222:tarantsov.com:22
+: 1191495167:0;mkdir /jury
+: 1191495174:0;sudo mkdir /mnt
+: 1191495181:0;sudo mkdir /mnt/jury
+: 1191495183:0;sshfs
+: 1191495185:0;sshfs -h
+: 1191495212:0;sshfs jury@ccfit.nsu.ru
+: 1191495241:0;sshfs ssh://jury@ccfit.nsu.ru /mnt/jury
+: 1191495246:0;sshfs jury@ccfit.nsu.ru /mnt/jury
+: 1191495258:0;cat =sjury
+: 1191495270:0;cat =zzgarbage
+: 1191495347:0;sudo sshfs jury@ccfit.nsu.ru:/home/other/jury/tarantsov /mnt/jury -orw -oreconnect -oumask=000 "-ovolname=jury@ccfit"
+: 1191495356:0;ls /mnt/jury
+: 1191495361:0;sudo ls /mnt/jury
+: 1191495366:0;sudo umount /mnt/jury
+: 1191495369:0;cd /mnt
+: 1191495384:0;ls -ld /YSFS
+: 1191495405:0;sudo chown andreyvit jury
+: 1191495413:0;sudo chown andreyvit:admin jury
+: 1191495414:0;ls -ld jury
+: 1191515056:0;say -v "Hysterical" "It's twenty-three thirty"
+: 1191515087:0;say -v "Whisper" "It's twenty-three thirty"
+: 1191515508:0;cd YourSway/trunk/y
+: 1191515510:0;cd YourSway/trunk/
+: 1191515597:0;hg addremove com.yoursway.rails.model.tests com.yoursway.rails.model
+: 1191515659:0;hg ci com.yoursway.rails.model.tests com.yoursway.rails.model
+: 1191516259:0;mate /Users/andreyvit/.ssh/known_hosts
+: 1191572808:0;hg diff com.yoursway.common
+: 1191572826:0;hg ci com.yoursway.common
+: 1191596275:0;scp jury@ccfit.nsu.ru:/tmp/lao/mouser.jar ./
+: 1191596428:0;java -jar mouser.jar
+: 1191600228:0;say overture
+: 1191605317:0;ssh fourdman@192.168.0.165
+: 1191605345:0;ssh 192.168.0.165
+: 1191610979:0;cd ~/Pictures
+: 1191610997:0;scp tarantsov.com:~/natasha.jpg ./
+: 1191611012:0;open natasha.jpg
+: 1191649281:0;ssh jury@ccfit.nsu.ru -Wmultimedia -L3389:193.124.208.119:3389
+: 1191650435:0;ssh jury@ccfit.nsu.ru -Wol246widesib -L3389:193.124.208.221:3389
+: 1191661973:0;cd ~fourdmna
+: 1191661975:0;cd ~fourdman
+: 1191661979:0;cd moze
+: 1191661981:0;cd maze
+: 1191661982:0;s
+: 1191662023:0;hg clone ~fourdman/maze Projects/pottosin07/fourdman-maze
+: 1191662050:0;cd Projects/pottosin07/fourdman-maze
+: 1191662189:0;cp ~fourdman/maze/sol.cpp ./
+: 1191662194:0;hg add sol.cpp
+: 1191662213:0;hg revert sol.cpp
+: 1191662217:0;hg rm sol.cpp
+: 1191662224:0;rm sol.cpp
+: 1191662286:0;hg pull
+: 1191668359:0;g++ sol.cpp
+: 1191668516:0;cd /usr/include/gcc/darwin/4.0/
+: 1191668520:0;cd machine
+: 1191670808:0;g++ foo.cpp
+: 1191671515:0;g++ -O2 foo.cpp
+: 1191671544:0;g++ sol.cpp 2>&1 | head -20
+: 1191671911:0;g++ sol.cpp 2>&1
+: 1191671921:0;g++ sol.cpp -o sol
+: 1191671945:0;mate run.rb
+: 1191671959:0;cp run.rb run-cpp.rb
+: 1191672026:0;chmod +x run-cpp.rb
+: 1191672034:0;./run-cpp.rb 01
+: 1191672239:0;ruby run-cpp.rb 01
+: 1191672322:0;ruby run-cpp.rb 18
+: 1191672477:0;ls -l maze.in
+: 1191672524:0;ruby run.rb 18
+: 1191673709:0;cat newtests/02.in
+: 1191673729:0;rm $f7
+: 1191673735:0;rm $f8
+: 1191673747:0;mate .hgignore
+: 1191673812:0;ruby run-cpp.rb 02
+: 1191673823:0;cat newtests/02.out
+: 1191674231:0;mate run-cpp.rb
+: 1191674292:0;./wtf 02
+: 1191674313:0;cp newtests/02.in maze.in
+: 1191674318:0;./sol
+: 1191674342:0;g++ -g sol.cpp -o sol
+: 1191674347:0;gdb sol
+: 1191676045:0;ruby run-cpp.rb
+: 1191676137:0;./wtf 01
+: 1191676145:0;rm maze.out
+: 1191676168:0;cp newtests/01.in maze.in
+: 1191676183:0;cat maze.out
+: 1191676194:0;java -cp src/ Task
+: 1191676200:0;mate src/Task.java
+: 1191676242:0;ruby run.rb
+: 1191732382:0;sshfs jury@ccfit.nsu.ru:/home/other/jury/tarantsov /mnt/jury -orw -oreconnect -oumask=000 "-ovolname=jury@ccfit"
+: 1191737962:0;telnet ccfit.nsu.ru 80
+: 1191739738:0;cd dataflow
+: 1191739815:0;hg log $1
+: 1191739849:0;hg revert -r 7 $1
+: 1191739861:0;hg revert -r 7 src/Task.java
+: 1191740629:0;mate input.txt
+: 1191740671:0;java -cp bin/ Task]
+: 1191740673:0;java -cp bin/ Task
+: 1191745985:0;hg push ssh://tarantsov.com/~andreyvit/pottosin07-dataflow
+: 1191762189:0;ping ccfit.nsu.ru
+: 1191762625:0;pubc
+: 1191763401:0;cd Projects/pottosin07/
+: 1191952630:0;ssh-keygen -t rsa
+: 1191952740:0;cat next_rsa
+: 1191952754:0;cat next_rsa.pub
+: 1191952872:0;ssh jury@ccfit.nsu.ru -i next_rsa
+: 1191952882:0;ssh jury@ccfit.nsu.ru
+: 1191995557:0;say cipher
+: 1192008822:0;ssh fourdbook
+: 1192008834:0;ssh fourdmac
+: 1192008847:0;ping 192.168.1.2
+: 1192008848:0;ping 192.168.1.1
+: 1192008854:0;ssh 192.168.1.1
+: 1192008861:0;ping 192.168.1.3
+: 1192008865:0;ping 192.168.1.141
+: 1192008869:0;ping 192.168.1.39
+: 1192008872:0;ping 192.168.1.139
+: 1192008879:0;ping -w1 192.168.1.139
+: 1192008884:0;ping -t1 192.168.1.139
+: 1192008914:0;ping -t1 192.168.1.138
+: 1192008924:0;ssh 192.168.1.138
+: 1192009109:0;ssh 192.168.1.138 say "some eedee na houy"
+: 1192009129:0;ssh 192.168.1.138 say "ya nee zaloginen"
+: 1192009163:0;ssh 192.168.1.138 say "preved medved"
+: 1192009185:0;ssh 192.168.1.138 say "prervad madvad"
+: 1192009215:0;ssh 192.168.1.138 say "soukee vsear"
+: 1192009232:0;ssh 192.168.1.138 say "fourdman is a lamer"
+: 1192009257:0;ssh 192.168.1.138 say "maybe i have a sudo"
+: 1192009303:0;cd /usr/local/bin
+: 1192009313:0;sudo touch s4d
+: 1192009320:0;mate s4d
+: 1192009340:0;sudo chmod +x s4d
+: 1192009351:0;s4d "sooo?"
+: 1192009363:0;ssh 192.168.1.138 say "why not"
+: 1192009705:0;cd /Applications
+: 1192009711:0;cd Eclipse\ 
+: 1192009713:0;ls -ld
+: 1192009714:0;ls -ld .
+: 1192009721:0;cd Eclipse\ 3.3.app
+: 1192009739:0;su fourdman
+: 1192009747:0;sudo su fourdman
+: 1192011260:0;for((i=0;i<100;i++); do (ssh andreyvit@192.168.1.138 say "na houy" &) done
+: 1192011266:0;for((i=0;i<100;i++)); do (ssh andreyvit@192.168.1.138 say "na houy" &) done
+: 1192011271:0;for((i=0;i<100;i++)); do (ssh andreyvit@192.168.1.138 say "na houy" & ) done
+: 1192011279:0;for((i=0;i<100;i++)); do ( ssh andreyvit@192.168.1.138 say "na houy" & ); done
+: 1192011288:0;for ((i=0;i<100;i++)); do ( ssh andreyvit@192.168.1.138 say "na houy" & ); done
+: 1192011302:0;for ((i=0;i<100;i++)); do ( sleep 1; ssh andreyvit@192.168.1.138 say "na houy" & ); done
+: 1192011370:0;killa
+: 1192011380:0;ssh andreyvit@192.168.1.138
+: 1192040251:0;pubc you_simply_ask_them.txt
+: 1192093691:0;kill -9 6903
+: 1192093694:0;sudo kill -9 6903
+: 1192093702:0;ps aux | grep next
+: 1192164254:0;cvs
+: 1192350990:0;gcc
+: 1192351074:0;sudo apt-get install ghc'
+: 1192351075:0;sudo apt-get install ghc
+: 1192351761:0;sudo port install ghc
+: 1192351860:0;sudo port install hugs
+: 1192351865:0;sudo apt-get install hugs
+: 1192351920:0;hugs
+: 1192352316:0;hugs -98
+: 1192373742:0;hg ci -A com.yoursway.rails.model.tests -m "Model tests: new version in progress"
+: 1192373767:0;hg ci -A -m "Model tests: new version in progress" com.yoursway.rails.model.tests
+: 1192380221:0;cd Developer
+: 1192391334:0;р�hg update
+: 1192606769:0;ps aux | grep Quick
+: 1192606776:0;kill -9 103
+: 1192611849:0;svn co http://svn.lesserwiki.org/lesserwiki/trunk lesserwiki
+: 1192611977:0;svn co http://svn.lesserwiki.org/lesserwiki/trunk/ lesserwiki
+: 1192614803:0;say "directory"
+: 1192614812:0;say --help
+: 1192614827:0;say "active directory"
+: 1192696052:0;hg clone ssh://yoursway.com/~andreyvit/ys-unstable andreyvit-ys-copy
+: 1192768149:0;cd ~/Downloads
+: 1192768172:0;iconv -f cp1251 -t utf-8 info.htm info.html
+: 1192768176:0;iconv -f cp1251 -t utf-8 info.htm >info.html
+: 1192768191:0;mate info.html
+: 1192770475:0;iconv -f utf-8 -t cp1251 info.html >info.htm
+: 1192770490:0;iconv -f utf-8 -t cp1251 info.html >info_v2.htm
+: 1193049021:0;cd Documents/Parallels/Windows\ XP/Windows\ Disks/
+: 1193059655:0;mount
+: 1193059668:0;diskutil eject -force /dev/disk1
+: 1193059683:0;diskutil unmount -force /dev/disk1
+: 1193059691:0;diskutil unmount force /dev/disk1
+: 1193059773:0;diskutil unmountDisk -force /dev/disk1
+: 1193059778:0;diskutil unmountDisk force /dev/disk1
+: 1193059791:0;ps aux | grep DVD
+: 1193059795:0;kill -9 444
+: 1193164973:0;hg ci -A com.yoursway.rails.model.tests
+: 1193303451:0;ping download.key-tec.de
+: 1193461433:0;hg addremove com.yoursway.rails.model.tests
+: 1193461441:0;hg ci com.yoursway.rails.model.tests
+: 1193493508:0;hg addremove com.yoursway.rails.model com.yoursway.ide.ui.projectview
+: 1193493709:0;hg ci $f30
+: 1193493727:0;hg ci com.yoursway.rails.model com.yoursway.ide.ui.projectview
+: 1193498282:0;hg addremove $f13
+: 1193541054:0;ping nsu.ru
+: 1193542200:0;ls problems.doc
+: 1193542244:0;mv problems.doc acm_school_2007_all_problems.doc
+: 1193542248:0;mv
+: 1193542276:0;cd "`echo -e '\0057Users'`"
+: 1193558558:0;cd Diploma/ujudgew
+: 1193560112:0;ssh jury@ccfit.nsu.ru -Wol246widesib -L3389:193.124.208.121:3389 -L2222:tarantsov.com:22
+: 1193560120:0;hg pull ssh://localhost:2222/ujudge-unstable
+: 1193560157:0;ssh -p 2222 localhost
+: 1193560177:0;ssh jury@ccfit.nsu.ru -Wol246widesib -L3389:193.124.208.121:3389 -L222:tarantsov.com:22
+: 1193560185:0;hg pull ssh://localhost:222/ujudge-unstable
+: 1193560294:0;ssh -p 2220 localhost
+: 1193560322:0;hg merge -u
+: 1193560362:0;hg push ssh://localhost:2220/ujudge-unstable
+: 1193563304:0;script/generate migration AddPerTeamOverrides
+: 1193563890:0;find --help
+: 1193563905:0;find .
+: 1193563936:0;grep --help
+: 1193563954:0;grep -r context.state
+: 1193563984:0;grep -r context.state app/
+: 1193563996:0;grep -r Cont app/
+: 1193564008:0;grep -r contest.state .
+: 1193564083:0;grep -r contest.state . | more
+: 1193564404:0;grep -r contest.started_at '*.rhtml'
+: 1193564410:0;grep -r contest.started_at .
+: 1193568323:0;ping 193.124.208.93
+: 1193642704:0;ssh jury@ccfit.nsu.ru -Wol246widesib -L3389:193.124.208.121:3389 -L2220:tarantsov.com:22
+: 1193643123:0;hg pull ssh://localhost:2220/ujudge-unstable
+: 1193643132:0;hg pull ssh://tarantsov.com/ujudge-unstable
+: 1193643181:0;hg diff | mate -
+: 1193643234:0;hg ic
+: 1193675554:0;ping 10.168.48.1
+: 1193736063:0;ping bash.org.ru
+: 1193736082:0;telnet 83.222.3.55 80
+: 1193736084:0;telnet 83.222.3.55 8080
+: 1193736089:0;telnet 83.222.3.55 22
+: 1193739722:0;finger ata@lidia.iis.nsk.su
+: 1193739746:0;finger lidia.iis.nsk.su
+: 1193739752:0;man finger
+: 1193739766:0;finger ata lidia.iis.nsk.su
+: 1193818859:0;mysqldump -uroot ujudge_development >devdb.sql
+: 1193818866:0;mysql -uroot
+: 1193822752:0;ps aux | grep Dock
+: 1193822756:0;ps aux | grep Do
+: 1193822761:0;ps aux | grep -i Dock
+: 1193822775:0;ps aux | grep Paral
+: 1193822780:0;ps aux | grep Pa
+: 1193822785:0;ps aux | grep -i Parall
+: 1193822789:0;ps aux | grep -i desk
+: 1193822792:0;ps aux | grep -i safa
+: 1193822796:0;ps aux | grep Safa
+: 1193822799:0;ps aux
+: 1193822816:0;ps aux | less
+: 1193822857:0;kill -9 21048
+: 1193822882:0;sudo reboot
+: 1193826663:0;hg addremove $f12 $f11
+: 1193826667:0;hg addremove $f12 $f13
+: 1193826679:0;cp $f13 $f13.example
+: 1193826687:0;hg add $f14
+: 1193826694:0;vim .hgignore
+: 1193826744:0;hg diff $f11 $f9
+: 1193826754:0;hg diff $f11 $f9 $f9 | mate -
+: 1193826767:0;hg diff $f11 $f9 | mate -
+: 1193826773:0;hg diff $f9
+: 1193826786:0;hg diff $f11 $f9 $f8 | mate -
+: 1193826798:0;hg ci $f11 $f9 $f8
+: 1193826856:0;hg diff $f1 $f2
+: 1193826885:0;hg ci $f1 $f2 $f3 $f4 $f5 $f6 $f7
+: 1193841558:0;cd data
+: 1193841562:0;unzip acm_school_semifinal.zip
+: 1193843221:0;ls ..
+: 1193843258:0;rake ujudge:restore_submittion_file_names CONTEST_ID=6
+: 1193843424:0;rake ujudge:eliminate_repeated_submits CONTEST_ID=6
+: 1193843436:0;memcached -v
+: 1193843772:0;hg diff $f1
+: 1193884153:0;fpc
+: 1193884258:0;wget -c ftp://ftp.uni-erlangen.de/pub/mirrors/freepascal/dist/i386-win32-2.0.4/fpc-2.0.4.i386-win32.exe
+: 1193884273:0;ftp ftp.uni-erlangen.de
+: 1193888956:0;ssh jury@ccfit.nsu.ru -Wol246widesib -L3389:193.124.208.119:3389
+: 1193910647:0;ping www.yoursway.com
+: 1193942668:0;mate words.
+: 1193942671:0;mate words.txt
+: 1193942708:0;ruby words.rb | mate -
+: 1193942759:0;ruby words.rb > w2.txt
+: 1193942806:0;ruby words.rb
+: 1193942824:0;hexdump w2.txt
+: 1193942831:0;cd Projects/misc
+: 1193942835:0;hexdump words.
+: 1193942837:0;hexdump words.txt
+: 1193942881:0;head -b100 w2.txt
+: 1193942885:0;head -10 w2.txt
+: 1193942896:0;head -2 words. | hexdump
+: 1193942899:0;head -2 words.txt | hexdump
+: 1193942901:0;head -2 w2.txt | hexdump
+: 1193942919:0;mate w2.txt
+: 1193942948:0;head -2 words.txt | hexdump -c
+: 1193942951:0;head -2 w2.txt | hexdump -c
+: 1193942995:0;diff -u words.txt w2.txt
+: 1193942999:0;diff words.txt w2.txt
+: 1193943069:0;ruby words.rb | head -2
+: 1193943076:0;head -2 words.txt
+: 1193943106:0;cat words.
+: 1193943107:0;cat words.txt
+: 1193943144:0;iconv -fucs2 -tutf-8 words.txt
+: 1193943148:0;iconv -f ucs2 -t utf-8 words.txt
+: 1193943152:0;iconv -f ucs-2 -t utf-8 words.txt
+: 1193943185:0;mv words.txt w1
+: 1193943192:0;iconv -f ucs-2 -t utf-8 w1 >words.txt
+: 1194031764:0;cd Temp/darkplacesengine20070927/darkplaces/
+: 1194032039:0;sdl-config
+: 1194153733:0;ls =sshc
+: 1194153788:0;sshc -L3389:olimp.iis.nsk.su:3389
+: 1194156821:0;ssh jury@ccfit.nsu.ru -Wol246widesib -L3389:193.124.208.121:3389
+: 1194156854:0;ssh jury@ccfit.nsu.ru -Wol246widesib -L3319:193.124.208.121:3389 -L3321:193.124.208.121:3389
+: 1194157594:0;ssh yoursway.com
+: 1194159376:0;telnet 192.124.208.119 15837
+: 1194159427:0;telnet 193.124.208.119 15837
+: 1194165530:0;cd /Volumes/GRAY\ PLAYER
+: 1194165653:0;hg add $f3
+: 1194169110:0;hg update
+: 1194170481:0;cd Downloads/pen-0.17.2
+: 1194170485:0;man pen.1
+: 1194170490:0;man ./pen.1
+: 1194170661:0;man ./penctl.1
+: 1194175772:0;hg pull http://10.4.0.9:8000/
+: 1194175785:0;hg st
+: 1194175793:0;hg ci -m "Merged."
+: 1194179076:0;hg rm $f6
+: 1194179081:0;hg rm -f $f6
+: 1194179097:0;cat config/environments/dev2.rb
+: 1194179101:0;rm config/environments/dev2.rb
+: 1194179157:0;hg update default
+: 1194179188:0;hg merge foo
+: 1194179293:0;hg head
+: 1194179386:0;hg diff -r foo:tip app/views/teams/register.rhtml
+: 1194179393:0;hg diff -r foo app/views/teams/register.rhtml
+: 1194179406:0;hg update -v tip
+: 1194179419:0;cp app/views/teams/register.rhtml ~/Temp/reg.rhtml
+: 1194179424:0;hg update foo
+: 1194179431:0;diff app/views/teams/register.rhtml ~/Temp/reg.rhtml
+: 1194179436:0;hg update tip
+: 1194181507:0;hg revert $f6
+: 1194285957:0;df
+: 1194285966:0;df -h
+: 1194326778:0;hg ci $f1 $f2
+: 1194326815:0;hg ci $f3
+: 1194346976:0;cd "`echo -e '\0057Users\0057andreyvit\0057Projects\0057Diploma\0057ujudgew'`"
+: 1194347022:0;cd "`echo -e '\0057Users\0057andreyvit\0057Projects\0057Diploma'`"
+: 1194355521:0;hg push ssh://localhost:3333/ujudge-unstable
+: 1194467983:0;say Thus
+: 1194524050:0;hg diff -v
+: 1194524052:0;hg diff -v -v
+: 1194524070:0;hg help diff
+: 1194524189:0;mate app/controllers/teams_controller.rb
+: 1194524194:0;hg diff -g
+: 1194526386:0;script/generate migration AddPlacements
+: 1194541725:0;script/generate controller Placements
+: 1194542204:0;script/generate model Placement
+: 1194542217:0;script/generate model Room
+: 1194542222:0;script/generate model Place
+: 1194542371:0;script/generate model TeamPlace
+: 1194560352:0;cd /usr/local/lib/ruby/gems/1.8/gems
+: 1194560360:0;mate /usr/local/lib/ruby/gems/1.8/gems
+: 1194572185:0;hg ci -A $f6 $f7
+: 1194572213:0;rm $f16 F17 $f18 $f19
+: 1194572223:0;rm $f16 $f17 $f18 $f19
+: 1194572269:0;hg diff $f3
+: 1194583829:0;rake db:remigrate
+: 1194585104:0;%
+: 1194587386:0;cd Projects/pottosin07
+: 1194587390:0;mkdir classes
+: 1194587391:0;cd classes
+: 1194588021:0;cd Diploma
+: 1194588147:0;cd Projects/Diploma
+: 1194588197:0;cd ujudgew
+: 1194588199:0;rake db:migrate
+: 1194601580:0;ping land5.nsu.ru
+: 1194601586:0;ping land7.nsu.ru
+: 1194606782:0;cat ccghost_nsu_ru_2121.ftp
+: 1194606924:0;ssh
+: 1194628113:0;hg ci $f1
+: 1194628406:0;hg revert
+: 1194628413:0;hg rollback
+: 1194628419:0;hg history
+: 1194628422:0;hg log
+: 1194628426:0;hg log --short
+: 1194628435:0;hg log -l5
+: 1194634158:0;script/generate controller Printouts
+: 1194636575:0;hg diff $f5
+: 1194636602:0;hg diff $f2 $f4 $f5
+: 1194636620:0;hg ci $f2 $f4 $f5
+: 1194637515:0;script/generate controller Other\
+: 1194637516:0;script/generate controller Other
+: 1194637881:0;hg ci -A
+: 1194666183:0;ping www.nsu.ru
+: 1194765380:0;cd ../Temp
+: 1194765382:0;cd darkplacesengine20070927
+: 1194765386:0;cd darkplaces
+: 1194765398:0;make cl-release
+: 1194765452:0;sudo port search sdl
+: 1194765506:0;cd .delegate
+: 1194765524:0;mate =sshc
+: 1194765558:0;telnet localhost 8080
+: 1194765586:0;export HTTP_PROXY=http://localhost:8080
+: 1194765618:0;cd Temp/darkplacesengine20070927/darkplaces
+: 1194765623:0;mATE
+: 1194765856:0;cd /var
+: 1194765866:0;cd spool
+: 1194765874:0;cd /opt
+: 1194765913:0;echo =port
+: 1194765918:0;cd /opt/local/var
+: 1194765928:0;cd macports/distfiles/libsdl
+: 1194765958:0;sudo cp ~/Downloads/SDL-1.2.11.tar.gz ./
+: 1194765966:0;rm SDL-1.2.11.tar.gz.TMP
+: 1194765974:0;sudo rm SDL-1.2.11.tar.gz.TMP
+: 1194765980:0;sudo port install libsdl
+: 1194766185:0;make
+: 1194766187:0;make release
+: 1194766244:0;cd Desktop
+: 1194766247:0;unzip Q1.zip
+: 1194766251:0;rm Q1.zip
+: 1194766281:0;mv /Applications/Quake\ 1/ID1/ ./
+: 1194766285:0;mv ID1 id1
+: 1194767062:0;sudo passwd fourdman
+: 1194767117:0;./darkplaces-agl
+: 1194767186:0;ifconfig
+: 1194768130:0;ls -l ./darkplaces-sdl
+: 1194768133:0;ls -lh ./darkplaces-sdl
+: 1194768151:0;./darkplaces-sdl
+: 1194875996:0;telnet 193.124.217.252 3389
+: 1194877808:0;open 1.JPG
+: 1194878441:0;open 2.JPG
+: 1194881565:0;open kasper.JPG
+: 1194884838:0;cd "`echo -e '\0057Users\0057andreyvit\0057Temp'`"
+: 1194884874:0;open blyaaat.JPG
+: 1194886853:0;ftp 10.3.81.167
+: 1195017645:0;du /var/vm/
+: 1195017653:0;du /var/vm/slee*
+: 1195017656:0;du /var/vm/swap*
+: 1195021072:0;telnet localhost 1038
+: 1195024893:0;ping 192.168.0.1'
+: 1195193512:0;h-down
+: 1195200153:0;ping 192.168.0.1
+: 1195200185:0;tracert www.hnet.ru
+: 1195200198:0;traceroute 193.124.208.119
+: 1195200415:0;traceroute www.hnet.ru
+: 1195201038:0;ping 10.168.48.237
+: 1195219662:0;iconv -t koi8-r -f ucs-2 acm_school_semifinals_standings.html
+: 1195219689:0;head -1 acm_school_semifinals_standings.html| hexdump
+: 1195219708:0;iconv -t cp1251 -f utf-8 acm_school_semifinals_standings.html
+: 1195219715:0;iconv -t koi8r -f utf-8 acm_school_semifinals_standings.html
+: 1195219719:0;iconv -t koi8-r -f utf-8 acm_school_semifinals_standings.html
+: 1195219724:0;iconv --help
+: 1195219727:0;man iconv
+: 1195219737:0;iconv -c -t koi8-r -f utf-8 acm_school_semifinals_standings.html
+: 1195219762:0;ssh olympweb@ccfit.nsu.ru
+: 1195219767:0;ssh olympweb@ccfit.nsu.ru -W appleapple
+: 1195219799:0;iconv -c -t koi8-r -f utf-8 acm_school_semifinals_standings.html > acm_school_semifinals_standings.shtml
+: 1195219822:0;scp acm_school_semifinals_standings.shtml olympweb@ccfit.nsu.ru:/home/other/olympweb/public_html/acmSchool/archive/2007/
+: 1195229116:0;cd Projects/YourSway/trunk
+: 1195229139:0;hg addremove $f7 $f8 $f9 $f10 $f11
+: 1195229168:0;hg ci -m "Fixed compilation errors. Starting implementation of the resources model"
+: 1195244054:0;ping 192.168.0.132
+: 1195244480:0;nc -l -p 7432
+: 1195298206:0;cd "`echo -e '\0057Users\0057andreyvit'`"
+: 1195298241:0;cd "`echo -e '\0057Users\0057andreyvit\0057Downloads'`"
+: 1195361749:0;cat =sshc
+: 1195411542:0;cd Pictures
+: 1195411546:0;pubc ROI17.JPG
+: 1195411574:0;mv ROI17.JPG roi17.jpg
+: 1195411578:0;pubc roi17.jpg
+: 1195446334:0;cd Temp/Nathalie/Control\ Theory
+: 1195446382:0;mate lab2.cpp
+: 1195484226:0;cd Temp/
+: 1195484228:0;wget http://debian.nsu.ru/debian-cd/current/i386/iso-cd/debian-40r0-i386-CD-1.iso
+: 1195484250:0;rm debian-40r0-i386-CD-1.iso
+: 1195484366:0;sshc
+: 1195540361:0;man shutdown
+: 1195585853:0;wget http://www.rarewares.org/files/libmmd9.1.zip
+: 1195585886:0;unzip --help
+: 1195585890:0;unzip -l http://www.rarewares.org/files/libmmd9.1.zip
+: 1195585895:0;unzip -l libmmd9.1.zip
+: 1195585899:0;unzip libmmd9.1.zip
+: 1195587453:0;кrm libmmd*
+: 1195587458:0;rm libmmd*
+: 1195595576:0;cd /cores
+: 1195595583:0;cd /var/vm/app_profile
+: 1195595595:0;cd /
+: 1195597680:0;sudo gem install sake
+: 1195598217:0;killall TextMate
+: 1195598265:0;grep -r Hash\.new '*.rb'
+: 1195598268:0;grep -r Hash\.new
+: 1195600485:0;script/console
+: 1195602946:0;hg add $f7
+: 1195602994:0;hg diff $f6
+: 1195603004:0;hg diff $f4
+: 1195603010:0;hg ci $f4
+: 1195603046:0;hg ci $f5
+: 1195603087:0;hg ci -m "Added ability to export form data"
+: 1195603103:0;ssh jury@ccfit.nsu.ru -Wol246widesib -L3319:193.124.208.119:3389 -L3321:193.124.208.121:3389
+: 1195603729:0;hg pull http://192.124.208.119:8000/
+: 1195603746:0;hg pull http://193.124.208.119:8000/
+: 1195603762:0;telnet 193.124.208.119 8000
+: 1195603766:0;telnet 193.124.208.119 4000
+: 1195603875:0;hg pull http://localhost:8019/
+: 1195603882:0;hg help merge
+: 1195603914:0;hg log -l4
+: 1195603935:0;hg push ssh://tarantsov.com/ujudge-unstable
+: 1195628887:0;ping 193.124.208.119
+: 1195628904:0;ping 193.124.217.252
+: 1195663072:0;ping 10.3.70.202
+: 1195713181:0;ping 193.124.215.129
+: 1195713254:0;traceroute 10.3.70.202
+: 1195844459:0;ls /Users
+: 1195844750:0;ls /Volumes/External\ HD
+: 1195844762:0;ls /Volumes/External\ HD/\!From_NeXT
+: 1195844768:0;pwd
+: 1195844771:0;cd /Volumes/External\ HD/\!From_NeXT
+: 1195845986:0;top -ocpu
+: 1195846006:0;top -ocpu -F
+: 1195846014:0;top -ocpu -FR
+: 1195846042:0;top -ocpu -FRS
+: 1195846253:0;top -ocpu -FRS -t2
+: 1195846360:0;man top
+: 1195852213:0;grep 995 /etc/services
+: 1195856221:0;hdiutil eject
+: 1195856258:0;diskutil unmount -force /Volumes/External\ HD
+: 1195856267:0;diskutil unmount force /Volumes/External\ HD
+: 1196161149:0;cd Documents/workspace
+: 1196161162:0;cd "`echo -e '\0057Users\0057andreyvit\0057Documents\0057workspace\0057\0056metadata'`"
+: 1196161164:0;cd "`echo -e '\0057Users\0057andreyvit\0057Documents\0057workspace\0057\0056metadata\0057\0056plugins'`"
+: 1196161172:0;cd "`echo -e '\0057Users\0057andreyvit\0057Documents\0057workspace\0057\0056metadata\0057\0056plugins\0057org\0056eclipse\0056jdt\0056core'`"
+: 1196190235:0;apropos usb
+: 1196190240:0;apropos USB
+: 1196190568:0;man sane-plustek
+: 1196190780:0;saned
+: 1196190782:0;sane-find-scanner
+: 1196191109:0;scanimage > test.pnm
+: 1196191140:0;scanimage --format tiff > test.tiff
+: 1196191182:0;open test
+: 1196191186:0;open test.tiff
+: 1196191366:0;man scanimage
+: 1196191480:0;scanimage --mode Color --format tiff > ~/Pictures/test.tiff
+: 1196191556:0;scanimage --mode Color --format tiff -w 210 -h 297 > ~/Pictures/test.tiff
+: 1196191573:0;scanimage -p -w210 -h297 --mode Color --format tiff > ~/Pictures/test.tiff
+: 1196191586:0;scanimage -p -x210 -y297 --mode Color --format tiff > ~/Pictures/test.tiff
+: 1196191674:0;scanimage -p -x210 -y297 --format tiff > ~/Pictures/test2.tiff
+: 1196191815:0;scanimage -L
+: 1196191822:0;scanimage --help --device-name plustek
+: 1196191917:0;scanimage -p -x210 -y297 --format tiff --resolution 300 --mode Gray > ~/Pictures/test2.tiff
+: 1196192315:0;scanimage -n --lamp-switch=off
+: 1196192326:0;scanimage -n --lamp-switch=yes
+: 1196192337:0;scanimage -n --lamp-switch=no
+: 1196192348:0;scanimage -n --calibrate
+: 1196232948:0;sudo kill -9 3984
+: 1196271771:0;top
+: 1196319785:0;man git-config
+: 1196320834:0;man git-bundle
+: 1196320949:0;git bundle
+: 1196321058:0;man git-add
+: 1196321289:0;cd Temp
+: 1196321291:0;mkdir gtest
+: 1196321293:0;cd gtest
+: 1196321357:0;git add foo
+: 1196321414:0;cat >bar
+: 1196321420:0;cat >>foo
+: 1196321425:0;git st
+: 1196321609:0;cat >>bar
+: 1196321614:0;git add
+: 1196322029:0;man git-cherry-pick
+: 1196323541:0;man git-clean
+: 1196324504:0;man git-describe
+: 1196325372:0;man git-fetch
+: 1196325557:0;man grep-init
+: 1196325616:0;man git-show
+: 1196325664:0;man git-status
+: 1196325846:0;man git-tag
+: 1196326305:0;man git-rev-parse
+: 1196326696:0;man git-cvsserver
+: 1196327050:0;man git-daemon
+: 1196328070:0;git describe HEAD
+: 1196328084:0;git describe master
+: 1196328095:0;git log --format=oneline
+: 1196328098:0;git log --format oneline
+: 1196328108:0;man git-log
+: 1196328171:0;git commit -i
+: 1196328248:0;git log --pretty=oneline
+: 1196328254:0;git log --prettly=longer
+: 1196328257:0;git log --pretty=longer
+: 1196328258:0;git log --pretty=long
+: 1196328263:0;git log --pretty=full
+: 1196328265:0;git log --pretty=fuller
+: 1196328272:0;git log --pretty=short
+: 1196328276:0;git log --pretty=medium
+: 1196329801:0;gitk
+: 1196343639:0;cat *
+: 1196364356:0;cd Projects/
+: 1196367328:0;cd fluent
+: 1196411923:0;cd ~/Temp
+: 1196411930:0;pubc Rivest-rc5.pdf
+: 1196413559:0;strip oxes
+: 1196413565:0;pubc oxes
+: 1196414289:0;git add oxes.pas
+: 1196414297:0;git ci
+: 1196414299:0;git commit
+: 1196414335:0;git push
+: 1196414899:0;man git-init
+: 1196414992:0;git-clone
+: 1196415008:0;git-clone OxesCows oxescows.git
+: 1196415022:0;rm -rf oxescows.git
+: 1196415041:0;GIT_DIR=oxescows.git git-init
+: 1196415050:0;git-pull ../OxesCows
+: 1196415070:0;man git-clone
+: 1196415086:0;git-push ../oxescows.git
+: 1196415096:0;rm -r oxescows.git
+: 1196415635:0;mkdir oxescows.git
+: 1196415637:0;cd oxescows.git
+: 1196415639:0;git init
+: 1196415650:0;git push ../oxescows.git master
+: 1196415655:0;git push ../oxescows.git
+: 1196415734:0;git push ssh://tarantsov.com/pub/oxescows.git/ master
+: 1196416362:0;git push ssh://tarantsov.com/pub/oxescows.git/
+: 1196416399:0;git remote add origin ssh://tarantsov.com/pub/oxescows.git/
+: 1196416405:0;git-fetch
+: 1196416437:0;git merge remotes/origin/master
+: 1196417224:0;mkdir analysis.git
+: 1196418136:0;mkdir reports.git
+: 1196418160:0;export CVSROOT=:ext:developer.instantiations.com:/usr/local/cvs/repository
+: 1196418173:0;cvs ls reports.andrey_taratsov
+: 1196418377:0;ssh andreyvit@developer.instantiations.com cvs -d/usr/local/cvs/repository ls
+: 1196418492:0;cat .ssh/id_rsa.pub
+: 1196418503:0;ssh andreyvit@developer.instantiations.com
+: 1196418540:0;vim ~/.cvspass
+: 1196418574:0;ps aux | grep ssh
+: 1196418678:0;man cvs
+: 1196418740:0;cvs -e ssh co reports.andrey_tarantsov reports.andrey_tarantsov
+: 1196418744:0;cvs co reports.andrey_tarantsov reports.andrey_tarantsov
+: 1196418772:0;mate ~/.zprofile
+: 1196418783:0;mate ~/.profile
+: 1196418802:0;mate /etc/profile
+: 1196418907:0;git log
+: 1196418920:0;git checkout c895c82dbf60990e52090df94e6d9fbe103bf304
+: 1196418950:0;git checkout origin
+: 1196418962:0;git checkout master
+: 1196418987:0;git-remote
+: 1196418990:0;git-remote --help
+: 1196418994:0;git-remote show origin
+: 1196427111:0;cd OxesCows
+: 1196427113:0;./oxes
+: 1196437323:0;ping ccphys.nsu.ru
+: 1196437466:0;who
+: 1196437469:0;ssh jury@ccfit.nsu.ru -Wol246widesib -L3319:193.124.208.119:3389 -L3321:193.124.208.121:3389 -L8019:193.124.208.119:8000
+: 1196486969:0;man scanf
+: 1196563298:0;man gh
+: 1196563300:0;hg
+: 1196563303:0;man hg import
+: 1196563583:0;git
+: 1196563632:0;git-cvsimport reports.andrey_tarantsov
+: 1196563663:0;git-cvsimport
+: 1196563676:0;git-cvsimport --help
+: 1196563716:0;cvsps --version
+: 1196563893:0;ping developer.instantiations.com
+: 1196563899:0;ssh developer.instantiations.com
+: 1196564016:0;mate /opt/local/bin/git-cvsimport
+: 1196588116:0;rm -r .git
+: 1196588151:0;echo $CVS_SERVER
+: 1196588461:0;git-cvsimport -v -v -v reports.andrey_tarantsov
+: 1196588476:0;git-cvsimport -v -p '--cvs-direct' reports.andrey_tarantsov
+: 1196588505:0;cvsps --help
+: 1196588509:0;cvsps
+: 1196588687:0;cvsps -u
+: 1196588721:0;cvsps -uv
+: 1196588724:0;cvsps -u -v
+: 1196588792:0;man cvsps
+: 1196588983:0;ls CVS
+: 1196589022:0;source /etc/pro
+: 1196589024:0;source /etc/profile
+: 1196589035:0;cvs log -d '30 Nov 2007 10:34:31 +0000<;30 Nov 2007 10:34:31 +0000'
+: 1196589065:0;echo $CVS_RSH
+: 1196589161:0;git-checkout
+: 1196589167:0;man git-checkout
+: 1196589347:0;git heads
+: 1196589351:0;git branches
+: 1196589353:0;git branch
+: 1196589367:0;git-checkout origin
+: 1196589454:0;git-diff 9234bc4a 6852446f
+: 1196589503:0;git-checkout 6852446f
+: 1196589515:0;ls AndreyHours.txt
+: 1196589566:0;git-clone reports.git rep2.git
+: 1196589569:0;cd rep2.git
+: 1196589600:0;man git
+: 1196589672:0;git-clone ssh://localhost/~andreyvit/Projects/Instantiations/reports.git rep3.git
+: 1196589693:0;git-clone ssh://10.168.48.237/~andreyvit/Projects/Instantiations/reports.git rep3.git
+: 1196589702:0;cd rep3.git
+: 1196589719:0;mate AndreyHours.txt
+: 1196589739:0;git add -i
+: 1196589774:0;git-push
+: 1196589789:0;mv rep3.git ../
+: 1196589833:0;git-cvsexportcommit
+: 1196589973:0;man git-cvs
+: 1196590046:0;export GIT_DIR=~/Projects/Instantiations/reports.git
+: 1196590065:0;(cd $GIT_DIR; git-log)
+: 1196590073:0;export GIT_DIR=~/Projects/Instantiations/reports.git/.git
+: 1196590125:0;git-cvsexportcommit 2407c67
+: 1196590161:0;git-cvsexportcommit -v 2407c67
+: 1196590176:0;cat .msg
+: 1196708512:0;cd Projects/YourSway
+: 1196708546:0;hg addremove
+: 1196741941:0;cd Projects/Nathalie/FIT_3204_Tarantsov_OGL_1
+: 1196741953:0;wintext FIT_3204_Tarantsov_OGL_About.txt
+: 1196789439:0;say "Specular"
+: 1196792181:0;h-up
+: 1196792314:0;java -jar console.jar
+: 1196792327:0;cat =h-up
+: 1196792332:0;cat =h-up; echo
+: 1196835911:0;tracert www.google.com
+: 1196923417:0;irb
+: 1196928975:0;cd Projects
+: 1196928982:0;cat AndreyHours.txt
+: 1196956697:0;cd YourSway
+: 1196961533:0;hg heads
+: 1196961576:0;hg-st
+: 1196961580:0;hg diff
+: 1196961615:0;hg merge --help
+: 1196962818:0;hg ci
+: 1196962873:0;hg push ssh://yoursway.com/~andreyvit/ys-unstable
+: 1197037124:0;cd IN
+: 1197133444:0;ssh crocodile.iis.nsk.su
+: 1197287313:0;script/server webrick
+: 1197287323:0;script/drbserver
+: 1197287451:0;cd Projects/Diploma/ujudgew
+: 1197287500:0;tail -f log/development.log
+: 1197287527:0;mysql -uroot -Dujudge_development
+: 1197361390:0;ping 10.3.70.251
+: 1197398716:0;rmdir hours
+: 1197398725:0;mkdir hours
+: 1197398794:0;cat >2007-12.txt
+: 1197433339:0;cd Downloads
+: 1197433343:0;cd jmonitor/l
+: 1197433346:0;cd jmonitor
+: 1197433350:0;java -jar console.jar -u tarantsov -p Supreme29court open
+: 1197444343:0;ssh ccfit.nsu.ru -ljury -Wmultimedia
+: 1197473667:0;cd Documents/workspace/com.instantiations.eclipse.analysis.indexer
+: 1197473678:0;\mc
+: 1197473683:0;cd "`echo -e '\0057Users\0057andreyvit\0057Documents\0057workspace\0057com\0056instantiations\0056eclipse\0056analysis\0056indexer\0057\0056settings'`"
+: 1197473693:0;cd "`echo -e '\0057Users\0057andreyvit\0057Documents\0057workspace\0057com\0056instantiations\0056eclipse\0056analysis\0056indexer'`"
+: 1197473706:0;mate .settings
+: 1197479324:0;cd junit-workspace/
+: 1197479337:0;mate .log
+: 1197479457:0;rm .log
+: 1197479505:0;cd .metadata
+: 1197480385:0;cd workspace
+: 1197480447:0;mkdir javaindexer.git
+: 1197480482:0;ln -s ~/Documents/workspace/com.instantiations.eclipse.analysis.indexer
+: 1197480492:0;git-add com.instantiations.eclipse.analysis.indexer
+: 1197480520:0;rm com.instantiations.eclipse.analysis.indexer
+: 1197480552:0;mv ~/Documents/workspace/com.instantiations.eclipse.analysis.indexer ./
+: 1197480558:0;mv ~/Documents/workspace/com.instantiations.eclipse.analysis.indexer_test ./
+: 1197480606:0;ls com.instantiations.eclipse.analysis.indexer
+: 1197480656:0;man gitignore
+: 1197480730:0;vim .gitignore
+: 1197480745:0;mate .gitignore
+: 1197480810:0;git status
+: 1197480953:0;git-cvsimport -v reports.andrey_tarantsov
+: 1197481388:0;mate Hello.java
+: 1197481442:0;javac Hello.java
+: 1197481458:0;java Hello
+: 1197481465:0;rm Hello.java Hello.class
+: 1197482196:0;cd reports.andrey_tarantsov
+: 1197482210:0;cd reports.git
+: 1197482311:0;cd analysis.git
+: 1197482346:0;export CVSROOT=:ext:andreyvit@developer.instantiations.com:/usr/local/cvs/repository
+: 1197482601:0;git-cvsimport -v com.instantiations.eclipse.analysis.indexer com.instantiations.eclipse.analysis.indexer_test
+: 1197482705:0;export CVS_RSH=ssh
+: 1197482721:0;mv analysis.git indexer.git
+: 1197482730:0;git-cvsimport -v com.instantiations.eclipse.analysis.indexer
+: 1197482790:0;mkdir indexer_tests.git
+: 1197482793:0;cd indexer_tests.git
+: 1197482798:0;git-cvsimport -v com.instantiations.eclipse.analysis.indexer_test
+: 1197483246:0;mkdir inst.git
+: 1197483258:0;git-cvsimport -v
+: 1197483270:0;man git-cvsimport
+: 1197487436:0;man git-cvsexportcommit
+: 1197524749:0;cd Projects/Nathalie
+: 1197524756:0;cd hours
+: 1197524930:0;cat 2007-12.txt
+: 1197524970:0;cat 2007-12.txt | cut -c12-18
+: 1197524972:0;cat 2007-12.txt | cut -c12-15
+: 1197524974:0;cat 2007-12.txt | cut -c12-16
+: 1197524992:0;cat 2007-12.txt | cut -c12-16 | sum
+: 1197524994:0;sum
+: 1197524997:0;man sum
+: 1197525037:0;cat 2007-12.txt | cut -c12-16 | awk '{ sum += $1 } END { print sum }'
+: 1197525122:0;cat >sum
+: 1197525150:0;chmod +x sum
+: 1197533808:0;shoot
+: 1197553435:0;cd Projects/Instantiations
+: 1197553446:0;cd inst.git
+: 1197553469:0;ls -lf
+: 1197553475:0;rm -rf .git
+: 1197553524:0;mkdir a
+: 1197553546:0;git-fetch ~/Projects/Instantiations/indexer.git/.git
+: 1197553552:0;git-fetch ~/Projects/Instantiations/indexer.git
+: 1197553556:0;ls -l
+: 1197553569:0;git-checkout master
+: 1197553738:0;cd Projects/Nathalie/version_control
+: 1197553741:0;cd Projects/Nathalie/
+: 1197553744:0;mkdir version_control
+: 1197553763:0;export CVSROOT=/Users/andreyvit/Projects/Nathalie/foo
+: 1197553766:0;cvs init
+: 1197553770:0;mate
+: 1197553793:0;mkdir bar
+: 1197553824:0;cvs import --help
+: 1197553838:0;cvs import . tag1v tag1r
+: 1197553875:0;cvs import bar tag1v tag1r
+: 1197553921:0;cd "`echo -e '\0057Users\0057andreyvit\0057Projects\0057Nathalie\0057ISO\00409000\0040HR\0040paper\0056pages'`"
+: 1197553926:0;cd "`echo -e '\0057Users\0057andreyvit\0057Projects\0057Nathalie\0057foo\0057bar'`"
+: 1197553929:0;cd "`echo -e '\0057Users\0057andreyvit\0057Projects\0057Nathalie\0057foo'`"
+: 1197553936:0;cd "`echo -e '\0057Users\0057andreyvit\0057Projects\0057Nathalie\0057bar'`"
+: 1197553937:0;cd "`echo -e '\0057Users\0057andreyvit\0057Projects\0057Nathalie'`"
+: 1197553966:0;cvs import barrr tag1v tag1r
+: 1197553997:0;rm -rf bar
+: 1197554003:0;cvs checkout bar
+: 1197554009:0;cvs checkout barrr bar
+: 1197554018:0;cd barrr
+: 1197554040:0;mate CVS
+: 1197554124:0;cvs tag
+: 1197554129:0;cvs status
+: 1197554195:0;cvs diff
+: 1197554198:0;cvs diff -u
+: 1197554314:0;cat CVS/Repository
+: 1197554317:0;cat CVS/Root
+: 1197554340:0;cat >fuuuu
+: 1197554345:0;cvs st
+: 1197554349:0;cvs st --help
+: 1197554355:0;cvs st -v
+: 1197554357:0;cvs up[
+: 1197554358:0;cvs up
+: 1197554365:0;cvs commnit
+: 1197554378:0;cvs add fuuuu
+: 1197554383:0;cat CVS/Entries
+: 1197554393:0;cvs commit
+: 1197554406:0;cvs log
+: 1197554410:0;cvs log fuuuu
+: 1197554449:0;cp file1 file1
+: 1197554453:0;cp file1 file2
+: 1197554507:0;diff file1 file2
+: 1197554535:0;diff -c2 file1 file2
+: 1197554540:0;diff -c 2 file1 file2
+: 1197554544:0;diff -u file1 file2
+: 1197554574:0;cd version_control
+: 1197554587:0;mkdir foo
+: 1197554597:0;mate .git
+: 1197554625:0;cat >file1
+: 1197555085:0;git-cat-file
+: 1197555101:0;git-cat-file -t 2c13650771
+: 1197555106:0;git-cat-file -c 2c13650771
+: 1197555116:0;git-cat-file commit 2c13650771
+: 1197555147:0;git-cat-file -t 76c408b68
+: 1197555150:0;git-cat-file tree 76c408b68
+: 1197555155:0;git-cat-file tree 76c408b68; echo
+: 1197555223:0;git-cat-file -t 64e09
+: 1197555228:0;git-cat-file blob 64e09
+: 1197555411:0;cp -r foo bar
+: 1197555430:0;cat >file2
+: 1197555632:0;git-add file1
+: 1197555644:0;git-diff; echo
+: 1197555727:0;git-diff --cached
+: 1197555771:0;cd foo
+: 1197555778:0;git-pull ../bar
+: 1197555785:0;cat file1
+: 1197555844:0;git-cat-file commit 1e3b83fbb3ee5219d932287a6b586b38b22a5c13
+: 1197555857:0;git-cat-file commit ce0601f76d2ab2468ca16a02e9f69d282440b48e
+: 1197555867:0;git-cat-file commit d72ac8d975847a60dd7a2b5e1f2ac3fc90f8751a
+: 1197555887:0;cd bar
+: 1197555892:0;git-pull ../foo
+: 1197555988:0;rm -rf version_control
+: 1197556070:0;cd indexer
+: 1197556087:0;cd refs/heads
+: 1197556133:0;git-pull ../indexer.git
+: 1197556149:0;cd a
+: 1197556174:0;mv ../../a/.git ./
+: 1197556381:0;rm -rf a
+: 1197556383:0;mkdir b
+: 1197556384:0;cd b
+: 1197556385:0;git-init
+: 1197556401:0;git-pull ../indexer_tests.git
+: 1197556427:0;cd javaindexer.git/com.instantiations.eclipse.analysis.indexer_test
+: 1197556432:0;mv ../../b/.git
+: 1197556434:0;mv ../../b/.git ./
+: 1197556452:0;cat >.gitignore
+: 1197556553:0;;s
+: 1197567323:0;git-st
+: 1197567749:0;cd "`echo -e '\0057Users\0057andreyvit\0057Projects\0057Instantiations\0057javaindexer\0056git\0057com\0056instantiations\0056eclipse\0056analysis\0056indexer\0137test'`"
+: 1197567787:0;cd "`echo -e '\0057Users\0057andreyvit\0057Movies'`"
+: 1197571868:0;cd Documents/junit-workspace/.metadata/.plugins/com.instantiations.eclipse.analysis.indexer_test/testprojects/test_project/
+: 1197576038:0;./sum
+: 1197576074:0;git-add sum
+: 1197652185:0;cd src/com/instantiations/eclipse/analysis/indexer/location
+: 1197652457:0;cd ../../..
+: 1197652537:0;git-add
+: 1197656805:0;apropos crc32
+: 1197656809:0;sdfdsf
+: 1197656814:0;man crc32
+: 1197656836:0;tclsh
+: 1197656846:0;crc::crc32
+: 1197656862:0;/usr/bin/crc32
+: 1197656868:0;cat >foo
+: 1197656876:0;cat =crc32
+: 1197656896:0;crc32
+: 1197656899:0;crc32 abc
+: 1197656923:0;rm abc
+: 1197658997:0;man git-reset
+: 1197659101:0;git reset --soft HEAD^
+: 1197659108:0;git-reset --soft HEAD^
+: 1197659113:0;git-branch
+: 1197659118:0;git-reset --soft master^
+: 1197659125:0;git-reset --soft 'HEAD^'
+: 1197659182:0;cat .git/ORIG_HEAD
+: 1197659193:0;man git-commit
+: 1197659206:0;git-commit -c ORIG_HEAD
+: 1197659217:0;git-gc
+: 1197659349:0;git-instaweb
+: 1197659419:0;git-instaweb -bopen
+: 1197659426:0;git-instaweb --browser=bopen
+: 1197659436:0;git-instaweb --browser=open
+: 1197659439:0;git-instaweb --stop
+: 1197659446:0;ps
+: 1197659451:0;killall git-instaweb
+: 1197659464:0;man git-instaweb
+: 1197659484:0;git --version
+: 1197659560:0;cd /Stage/
+: 1197659564:0;wget http://www.kernel.org/pub/software/scm/git/git-1.5.3.7.tar.gz
+: 1197661807:0;mkdir Backup
+: 1197661808:0;cd Backup
+: 1197661842:0;git-clone ../indexer.git com.instantiations.eclipse.analysis.indexer.git
+: 1197661858:0;git-clone ../indexer_tests.git com.instantiations.eclipse.analysis.indexer_tests.git
+: 1197661904:0;cd com.instantiations.eclipse.analysis.indexer.git
+: 1197661909:0;git-push ../foo
+: 1197661916:0;man git-push
+: 1197661963:0;man git-recieve-pack
+: 1197661969:0;man git-receive-pack
+: 1197662060:0;ssh tarantsov.com git-init com.instantiations.eclipse.analysis.indexer.git
+: 1197662075:0;ssh tarantsov.com mkdir com.instantiations.eclipse.analysis.indexer.git
+: 1197662092:0;ssh tarantsov.com 'cd com.instantiations.eclipse.analysis.indexer.git; git-init'
+: 1197662129:0;ssh tarantsov.com 'd=com.instantiations.eclipse.analysis.indexer_tests.git; mkdir $d; cd $d; git-init'
+: 1197662153:0;git-push ssh://tarantsov.com/com.instantiations.eclipse.analysis.indexer.git
+: 1197662179:0;git-push ssh://tarantsov.com/~/com.instantiations.eclipse.analysis.indexer.git master
+: 1197662193:0;cd com.instantiations.eclipse.analysis.indexer_tests.git
+: 1197663059:0;cd javaindexer.git
+: 1197663752:0;git-log
+: 1197663870:0;mate 2007-12.txt
+: 1197663925:0;git-add 2007-12.txt
+: 1197663932:0;git-commit
+: 1197663946:0;./sum 2007-12.txt
+: 1197675329:0;ls -a
+: 1197675444:0;git-status
+: 1197675490:0;git-diff
+: 1197675494:0;man git-diff
+: 1197675507:0;git-diff 'HEAD^' HEAD
+: 1197676256:0;c
+: 1197676511:0;cd com.instantiations.eclipse.analysis.indexer
+: 1197676511:0;l
+: 1197676512:0;sls
+: 1197676528:0;cd "`echo -e '\0057Users\0057andreyvit\0057Documents\0057junit\0055workspace\0057\0056metadata\0057\0056plugins\0057com\0056instantiations\0056eclipse\0056analysis\0056indexer\005740'`"
+: 1197676529:0;cd "`echo -e '\0057Users\0057andreyvit\0057Documents\0057junit\0055workspace\0057\0056metadata\0057\0056plugins\0057com\0056instantiations\0056eclipse\0056analysis\0056indexer\005711'`"
+: 1197676530:0;cd "`echo -e '\0057Users\0057andreyvit\0057Documents\0057junit\0055workspace\0057\0056metadata\0057\0056plugins\0057com\0056instantiations\0056eclipse\0056analysis\0056indexer'`"
+: 1197676557:0;git-add -i
+: 1197676665:0;git-commit --interactive
+: 1197676737:0;git-log test_project/src/tests/disk_storage/foo1.txt
+: 1197676746:0;git-log test_project
+: 1197681166:0;cd YourSway/trunk
+: 1197681169:0;cd .hg
+: 1197681171:0;mc
+: 1197681172:0;precmd(){ pwd>&8;kill -STOP $$ }
+: 1197681197:0;cd "`echo -e '\0057Users\0057andreyvit\0057Projects\0057YourSway\0057trunk\0057\0056hg\0057store\0057data\0057com\0056yoursway\0056common'`"
+: 1197681201:0;cd "`echo -e '\0057Users\0057andreyvit\0057Projects\0057YourSway\0057trunk\0057\0056hg\0057store\0057data'`"
+: 1197681202:0;cd "`echo -e '\0057Users\0057andreyvit\0057Projects\0057YourSway\0057trunk\0057\0056hg\0057store'`"
+: 1197681202:0;cd "`echo -e '\0057Users\0057andreyvit\0057Projects\0057YourSway\0057trunk\0057\0056hg'`"
+: 1197681203:0;cd "`echo -e '\0057Users\0057andreyvit\0057Projects\0057YourSway\0057trunk'`"
+: 1197681488:0;cd ../..
+: 1197681494:0;cd indexer.git
+: 1197681496:0;cd .git
+: 1197681500:0;cd refs
+: 1197681501:0;ld
+: 1197681504:0;cd heads
+: 1197709261:0;cat =git-commit
+: 1197745587:0;cd Documents/junit-workspace/.metadata/.plugins/com.instantiations.eclipse.analysis.indexer
+: 1197745594:0;cd 11
+: 1197745599:0;cat f119615713-1346852640.fileinfo
+: 1197745627:0;cd 40
+: 1197745638:0;mate l4033534911-1837191305.locinfo
+: 1197745719:0;cd Documents
+: 1197745723:0;cd workspace/
+: 1197745741:0;cd org.eclipse.dltk.tcl.ui
+: 1197750860:0;cd Projects/YourSway/
+: 1197750862:0;cd trunk
+: 1197750869:0;hg pull ssh://yoursway.com/~fourdman/ys-unstable
+: 1197750883:0;hg merge
+: 1197760619:0;cd Instantiations
+: 1197760630:0;cd javaindexer.git/com.instantiations.eclipse.analysis.indexer
+: 1197760640:0;git-push ssh://tarantsov.com/~/com.instantiations.eclipse.analysis.indexer.git
+: 1197760668:0;cd com.instantiations.eclipse.analysis.indexer_test
+: 1197760673:0;git-push ssh://tarantsov.com/~/com.instantiations.eclipse.analysis.indexer_tests.git master
+: 1197760675:0;git-push ssh://tarantsov.com/~/com.instantiations.eclipse.analysis.indexer_tests.git
+: 1197760722:0;cd
+: 1197760727:0;cd Projects/Nathalie/hours
+: 1197760733:0;ssh tarantsov.com
+: 1197760790:0;git-push ssh://tarantsov.com/~/nathalie/hours.git master
+: 1197760841:0;man git-update-index
+: 1197761242:0;man git-ls-files
+: 1197761356:0;man git-read-tree
+: 1197761778:0;man git-merge-tree
+: 1197761809:0;man git-merge-file
+: 1197761893:0;man git-merge-base
+: 1197761921:0;man git-merge-index
+: 1197762080:0;man git-merge-one-file
+: 1197762100:0;man git-ls-remote
+: 1197762212:0;man git-branch
+: 1197762386:0;git-branch -r
+: 1197762387:0;git-branch -a
+: 1197762403:0;cat .git/HEAD
+: 1197799217:0;cd ..
+: 1197799248:0;ls
+: 1197799255:0;mkdir gcheck
+: 1197799257:0;rm p1
+: 1197799260:0;cd gcheck
+: 1197799267:0;wget http://oapmg.sscc.ru/course/Hot%20news/ -op1
+: 1197799284:0;wget http://oapmg.sscc.ru/course/Tasks/Task_OGL/ -op2
+: 1197799309:0;rm index.html p1 p2
+: 1197799327:0;wget http://oapmg.sscc.ru/course/Tasks/Task_OGL/ -O p2
+: 1197799334:0;wget http://oapmg.sscc.ru/course/Hot%20news/ -O p1
+: 1197799545:0;cat >checker
+: 1197799552:0;chmod +x checker
+: 1197799555:0;mate .
+: 1197799594:0;say "Check graphics"
+: 1197799602:0;say "Debelov"
+: 1197799610:0;say "Dabalof"
+: 1197799617:0;say "Dabielof"
+: 1197799621:0;say "Dabelof"
+: 1197799626:0;say "Dabe'lof"
+: 1197799631:0;say "Dabilof"
+: 1197799638:0;say "Dab'ilof"
+: 1197799654:0;say -v "Bad News" "Dabilof changed something"
+: 1197799677:0;say -v "Googd News" "Dabilof changed something on his site"
+: 1197799711:0;man say
+: 1197799725:0;say -v "Good News" "Dabilof changed something on his site" -o debelov.aiff
+: 1197799738:0;say -v "Good News" -o debelov.aiff "Dabilof changed something on his site"
+: 1197799741:0;open .
+: 1197799797:0;pubc debelov.aiff
+: 1197799954:0;man diff
+: 1197800009:0;diff -q p1 p1; echo $?
+: 1197800012:0;diff -q p1 p2; echo $?
+: 1197800063:0;man sleep
+: 1197800081:0;cd Projects/Nathalie/gcheck
+: 1197800115:0;cp p2 p2.old
+: 1197800117:0;cat >p2
+: 1197800185:0;man wgert
+: 1197800219:0;traceroute www.google.com
+: 1197800241:0;man wget
+: 1197800282:0;./checker
+: 1197800342:0;cp p2.old p2
+: 1197800352:0;cp p1 p1.old
+: 1197800363:0;date >p1
+: 1197800444:0;cp p1.old p1
+: 1197849706:0;ping www.hnet.ru
+: 1197849709:0;ping www.google.com
+: 1197904962:0;say -v "Bad News" "Dabilof changed something on his site"
+: 1197904985:0;say -v "Good News" "Dabilof changed something on his site"
+: 1197927325:0;top -ocpu -FRS -s2
+: 1198163158:0;ping 10.3.70.250
+: 1198163198:0;ssh 10.3.70.250
+: 1198163202:0;telnet 10.3.70.250
+: 1198163283:0;telnet 10.3.70.251
+: 1198238882:0;cd .ssh
+: 1198238885:0;cat id_rsa.pub
+: 1198238907:0;cat >>authorized_keys
+: 1198238916:0;cat id_rsa
+: 1198239158:0;cd ..
+: 1198239162:0;cd /usr/local/bin
+: 1198239163:0;ls
+: 1198239187:0;mkdir �~/scripts
+: 1198239193:0;mkdir ~/s
+: 1198239197:0;mkdir /s
+: 1198239204:0;cp _* /s
+: 1198239205:0;ls
+: 1198239254:0;cp h-down h-quota h-up mount-tarantsov.com /s
+: 1198239256:0;cat postw32
+: 1198239260:0;ls
+: 1198239295:0;cp sjury sshc wintext zzgarbage /s
+: 1198239297:0;cd /s
+: 1198239299:0;cd ..
+: 1198239520:0;ls
+: 1198239546:0;ls -a .*
+: 1198239550:0;ls -ad .*
+: 1198239568:0;mkdir /s/zsh
+: 1198239575:0;cp .zshenv /s/zsh
+: 1198239580:0;cp .zshrc /s/zsh
+: 1198239585:0;cp .zhist /s/zsh
