@@ -29,7 +29,8 @@ case $url in
     port="${port#:}"
     ;;
   *:*)
-    repos_path="${x#:}"
+    x="$1"
+    repos_path="${x#*:}"
     host="${x%:$repos_path}"
     port=""
     ;;
