@@ -1,0 +1,45 @@
+#! /bin/bash
+bare=true
+cont=true
+while $cont && test -n "$1"; do
+  case $1 in
+    --bare | -b)
+      bare=true
+      shift;;
+    --nobare | --normal | -n)
+      bare=false
+      shift;;
+    -*)
+      echo "Unknown option $1."
+      exit 200;;
+    *)
+      cont=false;;
+  esac
+done
+
+
+url="$1"
+case $url in
+  ssh://*)
+    x="${url#ssh://}"
+    repos_path="${x#*/}"
+    host_n_port="${x%/$repos_path}"
+    host="${host_n_port%:*}"
+    port="${host_n_port#$host}"
+    port="${port#:}"
+    ;;
+  *:*)
+    repos_path="${x#:}"
+    host="${x%:$repos_path}"
+    port=""
+    ;;
+  *)
+    echo "Bad remote repository: $url."
+    echo "Accepted are ssh://foo.bar/~/boz and foo.bar:~/boz urls."
+    exit
+esac
+
+test -n "$port" || port=22
+$base && git_dir="$repos_path"
+$base || git_dir="$repos_path/.git"
+ssh -p $port $host "mkdir -p $repos_path && cd $repos_path && GIT_DIR=$git_dir git-init"

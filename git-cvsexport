@@ -12,7 +12,7 @@
 # or 'git-cvsexport' to export all remaining commits to CVS.
 
 
-USAGE='[ | set | export | history]'
+USAGE='[ | set | export | history | single]'
 
 SUBDIRECTORY_OK=Yes
 . git-sh-setup
@@ -91,6 +91,30 @@ cmd_export () {
 	done
 }
 
+cmd_single () {
+	get_workdir
+	
+	opt_f=""
+  case $1 in
+  -f) opt_f="-f"; shift;;
+  esac
+	
+	cvshead=$(git rev-parse --verify $ref_cvshead 2>/dev/null) ||
+		die "Don't know what is in CVS head. Run '$0 set' to initialize."
+	
+  newrev="$1"
+	newrev=$(git rev-parse --verify $newrev) ||
+		die "Invalid next revision specified."
+	
+	export GIT_DIR
+	(cd $workdir; git-cvsexportcommit -c -v $opt_f "$newrev^" $newrev) ||
+		die "Exporting failed."
+	
+	echo "cvshead: $cvshead => $newrev"
+	git update-ref -m "Committed $newrev using 'single' on $(date)" $ref_cvshead $newrev ||
+		die "Cannot update ref."
+}
+
 have_cvshead () {
 	git rev-parse --verify $ref_cvshead >/dev/null 2>&1
 }
@@ -110,6 +134,9 @@ set)
 history)
 	shift
 	cmd_history "$@";;
+single)
+	shift
+	cmd_single "$@";;
 help | usage)
 	usage;;
 *)

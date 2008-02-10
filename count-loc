@@ -1,0 +1,2 @@
+#! /bin/bash
+find . -name "$1" -exec wc -l '{}' \; | cut -c1-9 | asum

@@ -1,0 +1,30 @@
+#! /bin/bash
+
+USAGE='[ | set | export | history | single]'
+
+SUBDIRECTORY_OK=Yes
+. git-sh-setup
+cd_to_toplevel
+
+unmerged_files () {
+  git-ls-files -u | (
+    while true; do
+      read mode blob1 n1 file || exit
+      read mode blob2 n2 file
+      read mode blob3 n3 file
+      test "$n1" == "1" || die "expected 1, got $n1 for $file"
+      test "$n2" == "2" || die "expected 2, got $n2 for $file"
+      test "$n3" == "3" || die "expected 3, got $n3 for $file"
+      echo $blob1 $blob2 $blob3 $file
+    done
+  )
+}
+
+{
+  read blob1 blob2 blob3 file
+  while test -n "$blob1"; do
+    git-show $blob3 >$file || die "cannot git-show $blob3"
+    git-add $file || die "cannot git-add $file"
+    read blob1 blob2 blob3 file
+  done
+} < <(unmerged_files)

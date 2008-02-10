@@ -1,0 +1,2 @@
+#! /bin/bash
+mate $(find . -name "*$1*" -a -not -name '*.class')
