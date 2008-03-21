@@ -1,0 +1,78 @@
+#! /bin/bash
+
+SUBDIRECTORY_OK=Yes
+. git-sh-setup
+cd_to_toplevel
+
+do_fetch=true
+do_log=true
+
+while $cont && test -n "$1"; do
+  case $1 in
+    --no-fetch | -F)
+      do_fetch=false
+      shift;;
+    --help)
+      echo "Does a mix of git-fetch, git-log and git-merge."
+      echo "Usage:"
+      me="$(basename "$0")"
+      options="options"
+      echo "  $me $options remote-name"
+      echo ""
+      # echo "By default repositories ending with \".git\" are bare and others are not. Override:"
+      # echo "-b, --bare               initialize a bare repository (recommended for storing on a server)"
+      echo
+      exit;;
+    -*)
+      echo "Unknown option $1. Run $(basename "$0") --help for help."
+      exit 200;;
+    *)
+      cont=false;;
+  esac
+done
+
+remote=$1; shift
+test -z "$remote" && die "Remote name not specified"
+test -n "$1" && die "Extra arguments: $*"
+
+branch=$(git-current-branch) ||
+  die "Cannot calculate the current branch."
+  
+test "$branch" = "-" &&
+  die "Current HEAD is detached, please checkout a branch first."
+  
+remote_branch=refs/remotes/$remote/$branch
+git-show-ref --quiet --verify $remote_branch ||
+  die "Ref $remote_branch does not exist."
+
+if $do_fetch; then
+  echo "git-fetch $remote"
+  git-fetch $remote ||
+    die "git-fetch $remote failed."
+fi
+
+while true; do
+  echo -n "[Q]uit, [L]og, [D]iff, run git[K], [M]erge? "
+  read ans
+  case $ans in
+    q* | Q*)
+      exit;;
+    l* | L*)
+      git-log $branch..$remote_branch;;
+    d* | D*)
+      git-log -p $branch..$remote_branch | mate -;;
+    k* | K*)
+      gitk $branch..$remote_branch;;
+    m* | M*)
+      git-merge --no-commit $remote_branch ||
+        die "git-merge failed."
+      git-commit -v ||
+        die "git-commit failed."
+      exit;;
+    *)
+      echo "Invalid choice: $ans. Please try again.";;
+  esac
+done
+
+git-fetch $remote ||
+  die "git-fetch $remote failed."

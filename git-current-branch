@@ -1,0 +1,37 @@
+#! /bin/bash
+
+SUBDIRECTORY_OK=Yes
+. git-sh-setup
+
+while $cont && test -n "$1"; do
+  case $1 in
+    --help)
+      echo "Displays the branch the current HEAD refers to, or prints \"-\" for a detached HEAD."
+      echo "Usage:"
+      me="$(basename "$0")"
+      options="options"
+      echo "  $me"
+      echo
+      exit;;
+    -*)
+      die "Unknown option $1. Run $(basename "$0") --help for help.";;
+    *)
+      die "This command does not take any arguments (has $*). Run $(basename "$0") --help for help.";;
+  esac
+done
+
+head=$GIT_DIR/HEAD
+test -f $head ||
+  die "File not found: $head"
+
+read a b <$head
+if test "$a" = "ref:"; then
+  name="${b#refs/heads/}"
+  if test "$b" = "$name"; then
+    echo "-"
+  else
+    echo "$name"
+  fi
+else
+  echo "-"
+fi
