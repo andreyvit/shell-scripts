@@ -10,7 +10,7 @@ git_editor() {
 		echo >&2 "or EDITOR. Tried to fall back to vi but terminal is dumb."
 		echo >&2 "Please set one of these variables to an appropriate"
 		echo >&2 "editor or run $0 with options that will not cause an"
-		echo >&2 "editor to be invoked (e.g., -m or -F for git-commit)."
+		echo >&2 "editor to be invoked (e.g., -m or -F for git commit)."
 		exit 1
 		;;
 	esac
@@ -68,7 +68,7 @@ while $cont && test -n "$1"; do
       echo "-b, --bare               initialize a bare repository (recommended for storing on a server)"
       echo "-B, --nobare             initialize a regular repository (with a working dir)"
       echo ""
-      echo "-r, --remote <foo>       invoke git-remote to register the repository url as a named remote"
+      echo "-r, --remote <foo>       invoke git remote to register the repository url as a named remote"
       echo ""
       echo "-L, --link-dir <dir>     make a symlink to the repository on the server (for gitweb)"
       echo "    --link <name>        specify the symlink name (default is 'reponame.git')"
@@ -120,8 +120,8 @@ fi
 
 symlink_code=
 test -n "$symlink_dir" && symlink_code="&& ( cd $symlink_dir; ln -s $git_dir $symlink_name )"
-$dry_run ssh -p $port $host "mkdir -p $repos_path && cd $repos_path && GIT_DIR=$git_dir git-init && cd $git_dir && echo '$url' > cloneurl $symlink_code"
-test -n "$remote" && $dry_run git-remote add "$remote" "$url"
+$dry_run ssh -p $port $host "mkdir -p $repos_path && cd $repos_path && GIT_DIR=$git_dir git init && cd $git_dir && echo '$url' > cloneurl $symlink_code"
+test -n "$remote" && $dry_run git remote add "$remote" "$url"
 
 if $add_description; then
   f="$(mktemp -t descr)"
