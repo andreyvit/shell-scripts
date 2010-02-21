@@ -1,16 +1,16 @@
 # .zshenv
 
-PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/sw/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/Applications/SCM.app/Contents/Resources/scm/bin/:/opt/local/Library/Frameworks/Python.framework/Versions/2.4/bin"
+PATH="~/bin:$PATH" # "/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/sw/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/Applications/SCM.app/Contents/Resources/scm/bin/:/opt/local/Library/Frameworks/Python.framework/Versions/2.4/bin"
 export PATH
 
-source /sw/bin/init.sh
+test -d /sw/bin && source /sw/bin/init.sh
 
 if [ "${BASH-no}" != "no" ]; then
 	[ -r /etc/bashrc ] && . /etc/bashrc
 fi
 
-alias svn-st="source /usr/local/bin/_svn-st"
-alias hg-st="source /usr/local/bin/_hg-st"
+alias svn-st="source ~/Projects/shell-scripts/_svn-st"
+alias hg-st="source ~/Projects/shell-scripts/_hg-st"
 
 EVENT_NOKQUEUE=1
 VISUAL="mate -w"

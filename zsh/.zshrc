@@ -55,5 +55,7 @@ export PYTHONSTARTUP=$HOME/.pythonstartup
 
 bindkey -e
 
+cdpath=~/Projects
+
 # workaround: compinit + precmd result in no-interpretation of special characters
 echo
