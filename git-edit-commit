@@ -1,0 +1,102 @@
+#! /bin/bash
+
+OPTIONS_SPEC="edit-commit [options] <commitid>
+
+Interactively edits the given commit in an editor and rewrites all commits, references and tags accordingly.
+Optionally shifts the commit's date by the specified time delta.
+--
+h,help         show the help
+
+s,date-shift=  shift the commit date by the specified time delta, e.g. +1d, -2w, +4h, -8m
+n,dont-edit    don't invoke the editor (only makes sense when -s is specified)"
+
+SUBDIRECTORY_OK=Yes
+. git-sh-setup
+cd_to_toplevel
+
+date_shift=""
+do_edit=true
+
+while $cont && test -n "$1"; do
+  case $1 in
+    -d)  date_shift="$2"; shift; shift;;
+    -n)  do_edit=false; shift;;
+    --)  cont=false; shift;;
+    *)   cont=false;;
+  esac
+done
+
+test -z "$1" && die "Commit not specified."
+commit="$1"
+commit="$(git rev-parse --verify $commit)" || die "fatal: Invalid commit specified."
+
+temp="$(mktemp -t git-edit-commit)"
+git cat-file commit $commit >"$temp" || die "fatal: cat-file failed."
+
+##############################################################################################################
+# date shift
+test -n "$date_shift" && {
+  temp2="$(mktemp -t git-edit-commit)"
+  python -c "
+import sys, re, datetime
+
+delta = datetime.timedelta(days=0)
+MAP = dict(w='weeks', d='days', h='hours', m='minutes', s='seconds')
+for arg in ''.join(sys.argv[1:]).split(' '):
+  n, c = int(arg[0:-1]), arg[-1]
+  delta += datetime.timedelta(**{MAP[c]: n})
+
+x = re.compile('(?:author|committer) .* (\d+) [+-]\d+\\s*\$')
+for line in sys.stdin.read().splitlines(True):
+  m = re.match(x, line)
+  if m:
+    d = datetime.datetime.fromtimestamp(int(m.group(1)))
+    d += delta
+    line = line.replace(m.group(1), d.strftime('%s'))
+  sys.stdout.write(line)
+" $date_shift <"$temp" >"$temp2" || die "fatal: date shifting script failed"
+  temp="$temp2"
+}
+
+##############################################################################################################
+# natural dates
+{
+  temp2="$(mktemp -t git-edit-commit)"
+  python -c "
+import sys, re, datetime
+x = re.compile('(?:author|committer) .* (\d+) [+-]\d+\\s*\$')
+for line in sys.stdin.read().splitlines(True):
+  m = re.match(x, line)
+  if m:
+    d = datetime.datetime.fromtimestamp(int(m.group(1)))
+    line = line.replace(m.group(1), d.strftime('%Y-%m-%d %H:%M:%S'))
+  sys.stdout.write(line)
+" $date_shift <"$temp" >"$temp2" || die "fatal: date formatting script failed"
+  temp="$temp2"
+}
+
+$do_edit && { git_editor "$temp" || die "fatal: Editor failed."; }
+
+
+##############################################################################################################
+# de-naturalize dates
+{
+  temp2="$(mktemp -t git-edit-commit)"
+  python -c "
+import sys, re, datetime
+x = re.compile('(?:author|committer) .* (\d{4}-\d{1,2}-\d{1,2} \d{1,2}:\d{1,2}:\d{1,2}) [+-]\d+\\s*\$')
+for line in sys.stdin.read().splitlines(True):
+  m = re.match(x, line)
+  if m:
+    d = datetime.datetime.strptime(m.group(1), '%Y-%m-%d %H:%M:%S')
+    line = line.replace(m.group(1), d.strftime('%s'))
+  sys.stdout.write(line)
+" $date_shift <"$temp" >"$temp2" || die "fatal: date formatting script failed"
+  temp="$temp2"
+}
+
+newcommit=$(git hash-object -t commit -w "$temp")
+test "$commit" = "$newcommit" && die "Nothing changed."
+
+echo "$commit -> $newcommit"
+git filter-branch --parent-filter "sed 's/$commit/$newcommit/'" --tag-name-filter 'cat' -- --all
