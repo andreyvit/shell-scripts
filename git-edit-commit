@@ -19,7 +19,7 @@ do_edit=true
 
 while $cont && test -n "$1"; do
   case $1 in
-    -d)  date_shift="$2"; shift; shift;;
+    -s)  date_shift="$2"; shift; shift;;
     -n)  do_edit=false; shift;;
     --)  cont=false; shift;;
     *)   cont=false;;
